@@ -14,9 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
      
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript"></script>
         
         <title>WELCOME TO SRI LANKA</title>
@@ -28,7 +31,7 @@
 
 
       <div class="navbar-header">
-         <button class="navbar-toggle" data toggle="collapse" data-target=".navbar-collapse">
+         <button class="navbar-toggle" data-toggle="collapse" data-target="#coll">
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
@@ -37,7 +40,7 @@
          </div>
        
        
-       <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="coll" >
          <ul class="nav navbar-nav">
           <li class="active"><a href="index.jsp">Home</a></li>
           <li ><a href="Local.php">About Us</a></li>
@@ -59,7 +62,7 @@
                
          
          
-          <button type="submit" class="btn btn-warning"><a href="userstatus.jsp" class="btnfocl">Register</a> </button>
+          <button type="submit" class="btn btn-warning"><a href="Registerpage.jsp" class="btnfocl">Register</a> </button>
           
 </form>
 
@@ -83,7 +86,7 @@
              <button type="submit" class="btn btn-primary"><a href="https://www.facebook.com/News-With-Us-2238262113058548/?modal=admin_todo_tour" class="btnfocl">Facebook</a> </button>
              <h5>Please Before Using This Site Click And</h5>
              <div>
-             <button type="submit" class="btn btn-warning"><a href="userstatus.jsp" class="btnfocl">Register In Here</a> </button>
+             <button type="submit" class="btn btn-warning"><a href="Registerpage.jsp" class="btnfocl">Register In Here</a> </button>
              </div>
              <h6><img src="cop.jpg" width="15px" height="15px">      All rights reserved</h6>
           </div>
