@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 5, 2020, 11:18:02 AM
+    Author     : Isuru Mendis
+*/
+
+.navbar-brand{
+ 
+    font-weight: bold;
+   
+
+}
+
+.logo{
+
+   
+   padding-left: 18px;
+   padding-right: 18px;
+   padding-bottom: 35px;
+   width: 250px;
+   height: 190px;
+}
+
+.navbar-nav{
+
+font-weight: bold;
+
+
+}
+
+
+.font{
+
+	color: white;
+}
+
+
+
+#toprow{
+
+   margin-top: 100px;
+   text-align: center;
+
+}
+
+#toprow h1{
+
+font-weight: bold;
+color: #610B0B;
+
+
+}
+
+.btnfocl{
+
+	color: white;
+	padding-bottom: 70px;
+       font-weight: bold ;
+}
+
+#toprow h6{
+
+	font-weight: bold;
+}
+
+
+.title{
+
+	width: 70%;
+	height: 55px;
+	background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  filter: alpha(opacity=60); 
+
+}
+
+
+.form-group1{
+
+	 padding-left: 350px;
+ padding-top: 5px;
+ font-weight: bold;
+ color: maroon;
+ font-size: 15px;
+
+ 
+  
+ }
+
+
+.title1{
+
+	width: 70%;
+	height: 55px;
+	background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  filter: alpha(opacity=60); 
+
+}
+
+.title2{
+
+	width: 70%;
+	height: 200px;
+	background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  filter: alpha(opacity=60); 
+
+}
+
+
+.title3{
+
+	width: 70%;
+	height: 55px;
+	background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  filter: alpha(opacity=60); 
+
+}
+
+
+.title4{
+
+	width: 70%;
+	height: 55px;
+	background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  filter: alpha(opacity=60); 
+
+}
