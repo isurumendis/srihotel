@@ -138,3 +138,91 @@ color: #610B0B;
   filter: alpha(opacity=60); 
 
 }
+.twoline {
+       overflow: visible;
+    position: relative;
+    line-height: 18px; 
+    
+/*     height must be a multiple of line-height for how many rows you want to show (height = line-height x rows) */
+    height: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+   
+       
+    }
+    
+   
+   
+   .label1{
+       
+       float: left;
+       
+   }
+   
+   .lable2{
+       float: right;
+       margin-right: 75px;
+   }
+   
+   .prigh{
+       float: right;
+        overflow: visible;
+    position: relative;
+    line-height: 18px; 
+    width: 150px;
+    
+   
+    
+/*     height must be a multiple of line-height for how many rows you want to show (height = line-height x rows) */
+    height:auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+  
+       
+   }
+    
+   .pleft{
+       
+       float: left;
+        overflow: visible;
+    position: relative;
+    line-height: 18px; 
+    width: 150px;
+    
+   
+    
+/*     height must be a multiple of line-height for how many rows you want to show (height = line-height x rows) */
+    height:auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+  
+   }
+   
+    
+    body{
+       background-color: #efefef !important; 
+    }
+    
+    .single-blog
+    {
+        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+        padding: 30px;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #fff;
+        box-sizing: border-box;
+        width: auto;
+        height: 400px;
+       
+        
+       }
+       
+      
+     
