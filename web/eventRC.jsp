@@ -69,6 +69,38 @@
   opacity: 0.7;
   filter: alpha(opacity=60); 
 }
+
+
+.prigh1{
+       float: right;
+        overflow: visible;
+    position: relative;
+    line-height: 18px; 
+    width: 99px;
+    margin-left: 10px;
+    height:auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+  
+       
+   }
+   
+   .pleft1{
+       
+       float: left;
+        overflow: visible;
+    position: relative;
+    line-height: 18px; 
+    width: 150px;
+    height:auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+  
+   }
         </style>
         
          
@@ -163,8 +195,8 @@
                         <label class="lable2">Tel:</label>  </div>
                         
                         <div> 
-                    <p class="pleft"><%=rs.getString(5)%></p>
-                    <p class="hex" ><%=rs.getString(6)%></p></div>
+                    <p class="pleft1"><%=rs.getString(5)%></p>
+                    <p class="prigh1" ><%=rs.getString(6)%></p></div>
                     <div><button type="submit" class="btn btn-success btnsi1 "><a href="eventReservation.jsp" class="btns2">Interest</a> </button></div>
                     
                         </div>
