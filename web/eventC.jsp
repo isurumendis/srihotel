@@ -55,7 +55,7 @@
           <li ><a href="">About Us</a></li>
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="">Hotels Booking</a></li>
+          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
          <li ><a href="">Sri Lankan Beaches</a></li>
          <li ><a href="">Wild Life & Nature</a></li>
           <li ><a href="adminC.jsp">Add Post</a></li>
