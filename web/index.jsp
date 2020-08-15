@@ -12,10 +12,10 @@
          <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
      <link href="css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css"/>
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
      
@@ -25,6 +25,11 @@
         <title>WELCOME TO SRI LANKA</title>
     </head>
     <body>
+        
+        <style>
+     <%@ include file="css/style.css"%>
+</style>
+        
      <div class="navbar navbar-default">
     <div class="container-fluid">
       
@@ -63,6 +68,7 @@
          
          
           <button type="submit" class="btn btn-warning"><a href="Registerpage.jsp" class="btnfocl">Register</a> </button>
+          <a href="#" id="fpword">Forgot Password?</a>
           
 </form>
 

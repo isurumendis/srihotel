@@ -30,6 +30,7 @@
     <body>
         <style>
             
+            <%@ include file="css/style.css"%>
             body{
        background-image: url("wp.jpg");
        height:770px;
@@ -74,6 +75,22 @@
   opacity: 0.7;
   filter: alpha(opacity=60); 
 }
+
+.single-blog
+    {
+     
+      box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+        padding: 30px;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #fff;
+        box-sizing: border-box;
+        width: auto;
+        height: 400px;
+       
+        
+       }
         </style>
         
          
@@ -158,7 +175,7 @@
                              
                      <div class="col-md-4">
                     <div class="single-blog">
-                    <h2><%=rs.getString(2)%></h2>
+                        <h2 class="twoline"><%=rs.getString(2)%></h2>
                     <p class="twoline"><%=rs.getString(3)%></p>
                        
                     <label> Tel:</label>
