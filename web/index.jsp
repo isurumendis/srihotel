@@ -93,7 +93,32 @@
         </div>
       </div>
             
+             <div class="popup">
+                  <div class="popup-content">
+                      
+                      <img src="close.png" alt="Close" class="close" >
+                      <img src="icon.png" alt="user">
+                      <form name="pcform" action="pchange" method="get" >
+           
+                          <input class="hel" type="text" name="f1" placeholder="User Name">
+                          <input class="hel" type="password" name="f2" placeholder="New Password">
+                 <input type="submit" value="Log In" class="btn btn-primary">
+              
+                      </form>
+                 </div> 
+          </div> 
+         <script type="text/javascript">
+            document.getElementById("fpword").addEventListener('click',
+            function(){
+            document.querySelector('.popup').style.display = 'flex';
+            });
             
+            document.querySelector(".close").addEventListener("click",
+            function(){
+                document.querySelector(".popup").style.display = "none";
+            });
+        </script>
+        
     
     </body>
 </html>
