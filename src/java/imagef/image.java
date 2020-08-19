@@ -29,7 +29,7 @@ public class image extends HttpServlet {
              String description= request.getParameter("e4");
              String reporter= request.getParameter("e5");
             String pnumber= request.getParameter("e6");
-             
+            String links= request.getParameter("e7");
                Connection conn =null;
              Statement st =null;
              
@@ -42,7 +42,7 @@ public class image extends HttpServlet {
              
                  st = conn.createStatement();
                  
-                 String qry="INSERT INTO `uplod` (`id`, `title`, `stitle`, `description`, `reporter`, `pnumber`) VALUES (NULL, '"+title+"', '"+stitle+"', '"+description+"', '"+reporter+"', '"+pnumber+"')";
+                 String qry="INSERT INTO `uplod` (`id`, `title`, `stitle`, `description`, `reporter`, `pnumber`, `links`) VALUES (NULL, '"+title+"', '"+stitle+"', '"+description+"', '"+reporter+"', '"+pnumber+"', '"+links+"')";
                  
                  st.executeUpdate(qry);
                  out.print("data succsess");

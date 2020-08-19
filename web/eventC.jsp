@@ -97,6 +97,11 @@
    <input type="text" name="e6" class="form-control title4" placeholder="Enter Phone Number">
    </div>
    
+  <div class="form-group  form-group1 form1" >
+   <lable for="phone number">Website URL:</lable>
+   <input type="text" name="e7" class="form-control title4" placeholder="Website URL">
+   </div>    
+      
   <div class="form-group  form-group1 " >
   <button type="submit" value="Submit" class="btn btn-success">Submit</button>
   <button type="reset" value="Cancel" class="btn btn-warning">Cancel</button>

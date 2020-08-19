@@ -116,7 +116,9 @@
             Name:<input type="text" name="b5"  class="form-control title9" value="" placeholder="Name">
               </div>
             
-         
+         <div class="form-group  form-group10 " >
+            Website URL:<input type="text" name="b6"  class="form-control title9" value="" placeholder="Website URL">
+              </div>
             
              <div class="form-group  form-group10 " >
              <button type="submit" value="Submit" class="btn btn-success">Submit</button>

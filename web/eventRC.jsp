@@ -145,8 +145,7 @@
           <li ><a href="">Historical</a></li>
           <li class="active"><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
-           <li ><a href="">Sri Lankan Beaches</a></li>
-           <li ><a href="">Wild Life & Nature</a></li>
+        
           
           <li ><a href="adminC.jsp">Add Post</a></li>
           <li ><a href="rateRRC.jsp">Ratings</a></li>
@@ -162,7 +161,7 @@
             <table border="2" class="table1">
                 <tr>
                     <td>
-                        <label class="btns2">Enter Event Name And Rate It</label>
+                        <label class="btns2">Enter Event ID And Rate It</label>
                            <input type="text" name="r1">
                     </td>
                     <td><input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
@@ -189,7 +188,7 @@
              
              try{
                  
-                 
+                
                  Class.forName("com.mysql.jdbc.Driver");
                  conn=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
                  st = conn.createStatement();
@@ -209,13 +208,15 @@
                     <p class="twoline"><%=rs.getString(4)%></p>
                     
                     <div >
-                        <label class="lable1">Organizer:</label>
+                        <label>Organizer:</label>
                         <label class="lable2">Tel:</label>  </div>
                         
                         <div> 
                     <p class="pleft1"><%=rs.getString(5)%></p>
                     <p class="prigh1" ><%=rs.getString(6)%></p></div>
-                    <div><button type="submit" class="btn btn-success btnsi1 "><a href="eventReservation.jsp" class="btns2">Interest</a> </button></div>
+                    <div><button type="submit" class="btn btn-success btnsi1 lable4 "><a href="eventReservation.jsp" class="btns2" >Interest</a> </button>
+                    <button type="submit" class="btn btn-primary"><a href="<%=rs.getString(7)%>" class="lable3">more...</a> </button>
+                    </div>
                     
                         </div>
                 </div>

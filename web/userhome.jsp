@@ -44,12 +44,9 @@
          <ul class="nav navbar-nav">
           <li class="active"><a href="userhome.jsp">Home</a></li>
           <li ><a href="Local.php">About Us</a></li>
-          <li ><a href="admin.jsp">Admin Account</a></li>
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
-          <li ><a href="">Sri Lankan Beaches</a></li>
-           <li ><a href="">Wild Life & Nature</a></li>
           <li><a href="useraddpost.jsp">Add Post</a></li>
           <li ><a href="rateRRC.jsp">Ratings</a></li>
           

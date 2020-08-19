@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bookh;
+package pcchangef;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.*;
 
-@WebServlet(name = "book", urlPatterns = {"/book"})
-public class book extends HttpServlet {
 
+@WebServlet(name = "pchange", urlPatterns = {"/pchange"})
+public class pchange extends HttpServlet {
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -24,54 +24,46 @@ public class book extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             
             
-           
-             String hotelname= request.getParameter("b1");
-             String description= request.getParameter("b2");
-             String contactno = request.getParameter("b3");
-             String email= request.getParameter("b4");
-              String name= request.getParameter("b5");
-              String links= request.getParameter("b6");
-              if(name != null && email != null){
-              response.sendRedirect("Reservation.jsp");
-          }
+             String name = request.getParameter("f1");
+             String pword = request.getParameter("f2");
+             
+             
+//              if(name != null && pword != null){
+//              response.sendRedirect("index.jsp");
+//          }
               
-             Connection conn =null;
-             Statement st =null;
+             
              
              try{
-                 
+                 Connection conn =null;
+             Statement st =null;
                  
                  Class.forName("com.mysql.jdbc.Driver");
-                 conn=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
+                 conn=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/event","root","");
                  st = conn.createStatement();
-                 
-             String qry="INSERT INTO `booking` (`id`, `hotelname`, `description`, `contactno`, `email`, `name`, `links`) VALUES (NULL, '"+hotelname+"', '"+description+"', '"+contactno+"', '"+email+"', '"+name+"', '"+links+"')";
+                 String qry = "update wedd set pword='"+pword+"' where name='"+name+"'";
+                  
              
                 st.executeUpdate(qry);
-                 out.print("data succsess");
+                 out.print("data update succsess");
                  
              }catch(Exception ex)
              {
                  out.print (ex.getMessage());
              }
              
-            
-            
-            
-            out.println("<!DOCTYPE html>");
+             
+              out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet book</title>");            
+            out.println("<title>Servlet pchange</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet book at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet pchange at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
-        
-       
     }
-
     
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -79,5 +71,8 @@ public class book extends HttpServlet {
         doGet(request, response);
     }
 
-   
+  
 }
+        
+    
+

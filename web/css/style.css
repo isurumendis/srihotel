@@ -149,14 +149,29 @@ color: #610B0B;
     -webkit-hyphens: auto;
     hyphens: auto;
     word-wrap: break-word;
+     }
+    
+   .twoline1{
+       overflow: visible;
+    position: relative;
+    line-height: 25px; 
+    
+/*     height must be a multiple of line-height for how many rows you want to show (height = line-height x rows) */
+    height: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+     }
+     
+     .padd{
+         
+       margin-top: -10px;
+       font-weight: bold;
+     }
     
    
-       
-    }
-    
-   
-   
-   .label1{
+   .lable1{
        
        float: left;
        
@@ -165,6 +180,26 @@ color: #610B0B;
    .lable2{
        float: right;
        margin-right: 75px;
+   }
+   
+   .lable3{
+    color: white;
+    font-size: 14px;
+    float: right;
+     position: relative;
+     font-weight: bold;
+     
+       
+   }
+   
+   .lable4{
+       
+      margin-right: 125px;
+   }
+   
+    .lable5{
+       
+      margin-right: 120px;
    }
    
    .hex{
