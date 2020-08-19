@@ -1,6 +1,6 @@
 <%-- 
-    Document   : adminC
-    Created on : Aug 8, 2020, 1:54:51 PM
+    Document   : adminp
+    Created on : Aug 19, 2020, 10:44:44 AM
     Author     : Isuru Mendis
 --%>
 
@@ -59,13 +59,15 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="index.jsp">Home</a></li>
+          <li ><a href="adminhome.jsp">Home</a></li>
           <li ><a href="">About Us</a></li>
+          <li ><a href="admin.jsp">Admin Account</a></li>
           <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
-          <li class="active"><a href="adminC.jsp">Add Post</a></li>
-          <li ><a href="rateRRC.jsp">Ratings</a></li>
+          <li ><a href="eventR.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="Details.jsp">Details</a></li>
+          <li class="active"><a href="adminp.jsp">Add Post</a></li>
+          <li ><a href="rateRR.jsp">Ratings</a></li>
           
          </ul>
              </div>
@@ -73,12 +75,13 @@
      </div>
        <br><br><br><br><br><br><br><br>
     <center>
-        <button type="submit" class="btn btn-info btnsi "><a href="SLheritageC.jsp" class="btnfocl btnsi">Sri Lankan Historical</a> </button><br><br>
-       <button type="submit" class="btn btn-primary btnsi"><a href="eventC.jsp" class="btnfocl btnsi">Events Organize</a> </button><br><br>
-       <button type="submit" class="btn btn-danger btnsi"><a href="booking.jsp" class="btnfocl btnsi">Hotels Booking</a> </button><br><br>
+        <button type="submit" class="btn btn-info btnsi "><a href="SLheritage.jsp" class="btnfocl btnsi">Sri Lankan Historical</a> </button><br><br>
+       <button type="submit" class="btn btn-primary btnsi"><a href="event.jsp" class="btnfocl btnsi">Events Organize</a> </button><br><br>
+       <button type="submit" class="btn btn-danger btnsi"><a href="bookingA.jsp" class="btnfocl btnsi">Hotels Booking</a> </button><br><br>
        <button type="submit" class="btn btn-warning btnsi"><a href="" class="btnfocl btnsi">Sri Lankan Beaches</a> </button><br><br>
        <button type="submit" class="btn btn-success btnsi"><a href="" class="btnfocl btnsi">Wild Life & Nature</a> </button><br><br>
     </center>
        
     </body>
 </html>
+

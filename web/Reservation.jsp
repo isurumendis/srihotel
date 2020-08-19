@@ -117,8 +117,6 @@
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li class="active"><a href="Reservation.jsp">Hotels Booking</a></li>
-          <li ><a href="">Sri Lankan Beaches</a></li>
-          <li ><a href="">Wild Life & Nature</a></li>
           <li ><a href="adminC.jsp">Add Post</a></li>
           <li ><a href="rateRRC.jsp">Ratings</a></li>
           
@@ -175,7 +173,8 @@
                              
                      <div class="col-md-4">
                     <div class="single-blog">
-                        <h2 class="twoline"><%=rs.getString(2)%></h2>
+                        <h3 class="padd"><%=rs.getString(1)%></h3>
+                        <h2 class="twoline1"><%=rs.getString(2)%></h2>
                     <p class="twoline"><%=rs.getString(3)%></p>
                        
                     <label> Tel:</label>
@@ -189,7 +188,9 @@
                     <p class="pleft"><%=rs.getString(5)%></p>
                     <p class="prigh" ><%=rs.getString(6)%></p></div>
                     
-                    <div><button type="submit" class="btn btn-success btnsi1 "><a href="hotelC.jsp" class="btns2">BOOKING</a> </button></div>
+                    <div><button type="submit" class="btn btn-success btnsi1 lable5"><a href="hotelC.jsp" class="btns2">BOOKING</a> </button>
+                        <button type="submit" class="btn btn-primary"><a href="<%=rs.getString(7)%>" class="lable3">more...</a> </button>
+                    </div>
                   
                             
                         
