@@ -25,6 +25,11 @@
         <title>WELCOME TO SRI LANKA</title>
     </head>
     <body>
+        
+         <style>
+     <%@ include file="css/style.css"%>
+</style>
+        
      <div class="navbar navbar-default">
     <div class="container-fluid">
       
@@ -48,10 +53,11 @@
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           <li><a href="useraddpost.jsp">Add Post</a></li>
-          <li ><a href="rateRRC.jsp">Ratings</a></li>
+          
           
          </ul>
          
+            <button type="submit" class="btn btn-warning btnfoc2"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
          <form name="form1"    onclick="validate()" class="navbar-form navbar-right">
          
 </form>
@@ -62,7 +68,7 @@
     </div>
 
    
-    <video autoplay muted loop id="myVideo" width="100%" height="0%">
+<!--    <video autoplay muted loop id="myVideo" width="100%" height="0%">
 
       <source src="Cc3MZFCxQGo.mp4" type="video/mp4" >
       </video>
@@ -82,7 +88,7 @@
           </div>
         </div>
       </div>
-            
+            -->
             
     
     </body>

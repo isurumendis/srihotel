@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Reservation
-    Created on : Aug 8, 2020, 10:04:56 AM
+    Document   : ReservationA
+    Created on : Aug 25, 2020, 11:38:59 AM
     Author     : Isuru Mendis
 --%>
 
@@ -91,13 +91,6 @@
        
         
        }
-       
-       .btnfoc10{
-           color: white;
-	margin-top: 7px;
-       font-weight: bold ;
-       margin-left: 560px;
-       }
         </style>
         
          
@@ -124,12 +117,13 @@
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li class="active"><a href="Reservation.jsp">Hotels Booking</a></li>
+           <li ><a href="Details.jsp">Details</a></li>
           <li ><a href="adminC.jsp">Add Post</a></li>
-          
+          <li ><a href="rateRRC.jsp">Ratings</a></li>
           
          </ul>
-           
-            <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+           <button type="submit" class="btn btn-primary btnfoc5 " id="fpword"><a href="hotelupdate.jsp">Post Update</a> </button>
+            <button type="submit" class="btn btn-warning btnfoc4"><a href="adminhome.jsp" class="btnfoc3">Log Out</a> </button>
              </div>
      </div>
      </div>
@@ -179,7 +173,9 @@
                  
                  while(rs.next()){
                      %>
-                             
+                           
+                      
+                     
                      <div class="col-md-4">
                     <div class="single-blog">
                         <h3 class="padd"><%=rs.getString(1)%></h3>
@@ -197,8 +193,10 @@
                     <p class="pleft"><%=rs.getString(5)%></p>
                     <p class="prigh" ><%=rs.getString(6)%></p></div>
                     
-                    <div><button type="submit" class="btn btn-success btnsi1 lable5"><a href="hotel.jsp" class="btns2">BOOKING</a> </button>
+                    <div><button type="submit" class="btn btn-success btnsi1 lable5"><a href="hotelC.jsp" class="btns2">BOOKING</a> </button>
                         <button type="submit" class="btn btn-primary"><a href="<%=rs.getString(7)%>" class="lable3">more...</a> </button>
+                        <button type="submit" class="btn btn-primary btnfoc5 " id="fpword"><a href="hotelupdate.jsp">Post Update</a> </button>
+                      
                     </div>
                   
                             
@@ -207,6 +205,8 @@
                         
                     </div>
                 </div>
+                    
+                    
                      
         
                
@@ -216,10 +216,103 @@
              }catch(Exception ex){}
                  %>
                      
-                     
+             
         
-                        
+                  
+        
+        <%
+              try{
+            String host ="jdbc:mysql://localhost:3306/hotel";
+            
+            Statement stat = null;
+            ResultSet res = null;
+            PreparedStatement stmt= null;
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            conn=(Connection)DriverManager.getConnection(host, "root","");
+                 st = conn.createStatement();
+                 String qry="select * from booking";
+                 rs=st.executeQuery(qry);
+               %> 
+                 
+               <form name="pcform1" action="dataupdat" method="get" >
+                   
+                   <%
+                      stat = conn.createStatement();
+                      String u = request.getParameter("u");
+                      int num = Integer.parseInt(u);
+                      String data = "select * from booking";
+                      res = stat.executeQuery(data);
+                      while(rs.next()){
+                     %>
+                           
+                      
+                      <div class="popup1">
+                  <div class="popup-content1">
+                      
+                      <img src="close.png" alt="Close" class="close" >
+                      <img src="icon.png" alt="user">
+                      <form name="pcform1" action="dataupdat" method="get" >
+                          
+              <div class="form-group  form-group10 " >
+                Post ID:<input type="text" name="ch0" class="form-control title9" value="<%=rs.getString(1)%>" placeholder="Post ID Number">
+            </div>            
+                          
+            <div class="form-group  form-group10 " >
+                Hotel Name:<input type="text" name="ch1" class="form-control title9" value="<%=rs.getString(2)%>" placeholder="Hotel Name">
+            </div>
+            <div class="form-group  form-group10 " >
+                Description:<input type="text" name="ch2"  class="form-control title9" value="<%=rs.getString(3)%>" placeholder="Description">
+              </div>
+            <div class="form-group  form-group10 " >
+                Contact Number:<input type="text" name="ch3"  class="form-control title9" value="<%=rs.getString(4)%>" placeholder="Contact Number">
+              </div>
+            
+              <div class="form-group  form-group10 " >
+            Email:<input type="text" name="ch4"  class="form-control title9" value="<%=rs.getString(5)%>" placeholder="Email">
+              </div>
+            
+            <div class="form-group  form-group10 " >
+            Name:<input type="text" name="ch5"  class="form-control title9" value="<%=rs.getString(6)%>" placeholder="Name">
+              </div>
+            
+         <div class="form-group  form-group10 " >
+            Website URL:<input type="text" name="ch6"  class="form-control title9" value="<%=rs.getString(7)%>" placeholder="Website URL">
+              </div>
+            
+             <div class="form-group  form-group10 " >
+             <button type="submit" value="Submit" class="btn btn-success">Submit</button>
+             <button type="reset" value="Cancel" class="btn btn-warning">Cancel</button>
+             </div>
+<!--                 <input type="submit" value="Log In" class="btn btn-primary">-->
+              
+                    
+                 </div> 
+          </div>      
+                   </form>
+              
+              
+              
+         <script type="text/javascript">
+            document.getElementById("fpword").addEventListener('click',
+            function(){
+            document.querySelector('.popup1').style.display = 'flex';
+            });
+            
+            document.querySelector(".close").addEventListener("click",
+            function(){
+                document.querySelector(".popup1").style.display = "none";
+            });
+        </script>
+                    
+             
+      
+           <%
+                 }
+                      
+             }catch(Exception ex){}
+                 %>          
+        
+        
     </body>
 </html>
-
 

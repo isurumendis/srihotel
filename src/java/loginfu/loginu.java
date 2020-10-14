@@ -39,7 +39,7 @@ public class loginu extends HttpServlet {
                ResultSet rs=psm.executeQuery();
               
                if(rs.next()){
-                   response.sendRedirect("userhome.jsp");
+                   response.sendRedirect("newuserhome.jsp");
                }
                else{
                    out.print("Login failed");
