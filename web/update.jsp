@@ -1,11 +1,14 @@
 <%-- 
-    Document   : booking
-    Created on : Aug 8, 2020, 10:00:42 AM
+    Document   : update
+    Created on : Oct 12, 2020, 2:50:28 PM
     Author     : Isuru Mendis
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.sql.*"%>
+<%@page import=" java.sql.*"%>
+<%@page import="java.io.*" %>
+<%@page language="java" %> 
+
 
 <!DOCTYPE html>
 <html>
@@ -17,13 +20,11 @@
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/admincss.css">
-    <script type="text/javascript">
-        
-        </script>
-        <title>WELCOME TO SRI LANKA</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <style>
+        
+         <style>
             
             body{
        background-image: url("ss.jpg");
@@ -55,7 +56,11 @@
  font-size: 16px;
 
  }
-            
+ 
+ .lable10{
+       margin-left: 268px;
+   }
+          
             
             
         </style>
@@ -93,73 +98,71 @@
      </div>
      </div>
         
-        <br><br><br>
+        <br>
+        
         
         <div class="container" id="imag">
             
-        <form name="bform" action="book" method="get">
+        <form name="bform" action="update" method="get">
+            
+            <%
+            
+                        Connection con;
+                        PreparedStatement pst;
+                        ResultSet rs;
+                        
+                       Class.forName("com.mysql.jdbc.Driver");
+                       con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
+                       
+                       String id = request.getParameter("id");
+                       pst = con.prepareStatement("select * from booking where id = ? ");
+                       pst.setString(1, id);
+                       rs = pst.executeQuery();
+                       
+                      while(rs.next())
+                      {
+            
+            %>
+            
+            
             
             <div class="form-group  form-group10 " >
-                Hotel Name:<input type="text" name="b1" class="form-control title9" value="" placeholder="Hotel Name">
+                ID:<input type="text" name="b0" class="form-control title9" value="<%= rs.getString("id")%>" placeholder="ID Number">
             </div>
             <div class="form-group  form-group10 " >
-                Description:<input type="text" name="b2"  class="form-control title9" value="" placeholder="Description">
+                Hotel Name:<input type="text" name="b1" class="form-control title9" value="<%= rs.getString("hotelname")%>" placeholder="Hotel Name">
+            </div>
+            <div class="form-group  form-group10 " >
+                Description:<input type="text" name="b2"  class="form-control title9" value="<%= rs.getString("description")%>" placeholder="Description">
               </div>
             <div class="form-group  form-group10 " >
-                Contact Number:<input type="text" name="b3"  class="form-control title9" value="" placeholder="Contact Number">
+                Contact Number:<input type="text" name="b3"  class="form-control title9" value="<%= rs.getString("contactno")%>" placeholder="Contact Number">
               </div>
             
               <div class="form-group  form-group10 " >
-            Email:<input type="text" name="b4"  class="form-control title9" value="" placeholder="Email">
+            Email:<input type="text" name="b4"  class="form-control title9" value="<%= rs.getString("email")%>" placeholder="Email">
               </div>
             
             <div class="form-group  form-group10 " >
-            Name:<input type="text" name="b5"  class="form-control title9" value="" placeholder="Name">
+            Name:<input type="text" name="b5"  class="form-control title9" value="<%= rs.getString("name")%>" placeholder="Name">
               </div>
             
          <div class="form-group  form-group10 " >
-            Website URL:<input type="text" name="b6"  class="form-control title9" value="" placeholder="Website URL">
+            Website URL:<input type="text" name="b6"  class="form-control title9" value="<%= rs.getString("links")%>" placeholder="Website URL">
               </div>
+            
+            <% } %>
             
              <div class="form-group  form-group10 " >
              <button type="submit" value="Submit" class="btn btn-success">Submit</button>
              <button type="reset" value="Cancel" class="btn btn-warning">Cancel</button>
+             <button value="Back" class="btn lable10"><a href="hotelupdate.jsp">Back</a></button>
              </div>
-             <%--
-              String hotelname= request.getParameter("b1");
-             String description= request.getParameter("b2");
-             String contactno = request.getParameter("b3");
-             String email= request.getParameter("b4");
-              String name= request.getParameter("b5");
+            
+            
              
-             
-              
-             Connection conn =null;
-             Statement st =null;
-             
-             try{
-                 
-                 
-                 Class.forName("com.mysql.jdbc.Driver");
-                 conn=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
-                 st = conn.createStatement();
-                 
-             String qry="INSERT INTO `booking` (`id`, `hotelname`, `description`, `contactno`, `email`, `name`) VALUES (NULL, '"+hotelname+"', '"+description+"', '"+contactno+"', '"+email+"', '"+name+"')";
-             
-                st.executeUpdate(qry);
-                 out.print("data succsess");
-                 
-             }catch(Exception ex)
-             {
-                 out.print (ex.getMessage());
-             }
-             
-             
-             
-             --%>
         </form>
             
         </div>
     </body>
 </html>
-

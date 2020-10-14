@@ -23,6 +23,8 @@ and open the template in the editor.
    padding-bottom: 35px;
    width: 250px;
    height: 190px;
+   z-index: 1;
+   position: relative;
 }
 
 .navbar-nav{
@@ -62,6 +64,46 @@ color: #610B0B;
        font-weight: bold ;
 }
 
+
+
+
+
+.btnfoc2{
+
+	color: white;
+	margin-top: 7px;
+       font-weight: bold ;
+       margin-left: 560px;
+       
+}
+
+.btnfoc3{
+
+	color: white;
+	padding-bottom: 70px;
+       font-weight: bold ;
+      
+       
+}
+.btnfoc4{
+
+	color: white;
+	margin-top: 7px;
+       font-weight: bold ;
+       margin-left: 0px;
+       
+}
+
+.btnfoc5{
+
+    color: #ff9900;
+	margin-top: 7px;
+       font-weight: bold ;
+       margin-left: 303px;
+       background-color: white;
+       border-color: #ff9900;
+       
+}
 #toprow h6{
 
 	font-weight: bold;
@@ -192,6 +234,7 @@ color: #610B0B;
        
    }
    
+   
    .lable4{
        
       margin-right: 125px;
@@ -298,4 +341,34 @@ color: #610B0B;
        }
        
       
-     
+     .popup1{
+           background: rgba(0, 0, 0, 0.6);
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           top: 0;
+           display: none;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           
+           
+       } 
+       
+       .popup-content1{
+           height: 650px;
+           width: 500px;
+           background: #fff;
+           padding: 20px;
+           border-radius: 5px;
+           position: relative;
+       }
+       
+      .hel1{
+           
+           margin: 20px auto;
+           display: block;
+           width: 50%;
+           padding: 8px;
+           border: 1px solid gray;
+       }

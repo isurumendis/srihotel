@@ -119,6 +119,14 @@
        
         
        }
+       
+       
+       .btnfoc9{
+           color: white;
+	margin-top: 7px;
+       font-weight: bold ;
+       margin-left: 580px;
+       }
         </style>
         
          
@@ -148,10 +156,12 @@
         
           
           <li ><a href="adminC.jsp">Add Post</a></li>
-          <li ><a href="rateRRC.jsp">Ratings</a></li>
+         
           
           
          </ul>
+           
+            <button type="submit" class="btn btn-warning btnfoc9"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
              </div>
      </div>
      </div>
