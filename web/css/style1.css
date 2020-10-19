@@ -4,6 +4,16 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Oct 16, 2020, 12:51:31 PM
+    Author     : Isuru Mendis
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Aug 5, 2020, 11:18:02 AM
     Author     : Isuru Mendis
 */
@@ -11,8 +21,15 @@ and open the template in the editor.
 .navbar-brand{
  
     font-weight: bold;
+    
    
 
+}
+
+.navbar a{
+    
+   font-family: calibri;
+   font-size: 1.6rem;
 }
 
 .logo{
@@ -32,12 +49,9 @@ and open the template in the editor.
 font-weight: bold;
 
 
+
 }
-.navbar a{
-    
-   font-family: calibri;
-   font-size: 1.6rem;
-}
+
 
 .font{
 

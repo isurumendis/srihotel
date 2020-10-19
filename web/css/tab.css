@@ -1,18 +1,49 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Aug 5, 2020, 11:18:02 AM
-    Author     : Isuru Mendis
-*/
+
+
+.tabbody{
+    
+    margin-top: 150px;
+    margin-left: 50px;
+    
+    
+    
+}
+.tabrow{
+    background-color: crimson;
+    color: white;
+    height: 80px;
+    
+   
+    
+}
+.tabrow th{
+    
+  text-align: center;
+ 
+    
+}
+
+td{
+    background-color: white;
+}
+
+.panel-body .table{
+    width: 1250px;
+}
+
 
 .navbar-brand{
  
     font-weight: bold;
+    
    
 
+}
+
+.navbar a{
+    
+   font-family: calibri;
+   font-size: 1.6rem;
 }
 
 .logo{
@@ -32,12 +63,9 @@ and open the template in the editor.
 font-weight: bold;
 
 
+
 }
-.navbar a{
-    
-   font-family: calibri;
-   font-size: 1.6rem;
-}
+
 
 .font{
 
@@ -299,7 +327,9 @@ color: #610B0B;
    
     
     body{
-       background-color: #fff !important; 
+      background-image: url("white.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     
     

@@ -29,7 +29,7 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
     
@@ -43,12 +43,13 @@
         
         <style>
             
-            body{
+            .body2{
     margin: 0px 0px;
     padding: 0px;
     margin-left: 150px;
     margin-right: 200px;
     background-color: #6a6a74;
+    margin-top: 20px;
 }
 
 ul{
@@ -57,20 +58,21 @@ ul{
 a{
     text-decoration: none;
 }
-.container{
+.container1{
     
     width: auto;
-    max-height: 50vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
     
 }
 .box{
     width:250px;
     height: 370px;
     background-color: #1e1e26;
-    border-radius: 10px;
+   border-radius: 20px 0px 20px 0px;
     box-shadow: 10px 10px 12px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -78,13 +80,16 @@ a{
     justify-content: space-between;
     box-sizing: border-box;
     margin-left: -40px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     
 }
 .model{
     height: 180px;
     max-height: 100%;
     max-width: 100%;
+    border-radius: 20px 0px 0px 0px ;
+    
 }
 .details{
     display: flex;
@@ -124,8 +129,57 @@ a{
     width: 0px;
 }
 
+.icon{
+    width: 90px;
+    background-color: rgb(20, 20, 20);
+}
+.icon a{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding:15px; 
+}
+
+
+.imgZoom img{
+    height: 50px;
+    width: 50px;
+    -webkit-transition: all 1s ease;
+    
+    padding-left: 8px;
+    padding-top: 10px;
+    margin-top: -10px;
+    
+    
+}
+
+.imgZoom img:hover{
+    width: 70px;
+    height: 70px;
+   
+}
+
+#block{
+   background-color: #f3fab6;
+   width: 68px;
+   height: 65px;
+   border-radius: 10px;;
+   margin-bottom: -14px;
+   
+}
+
+#block h1{
+    font-size: 1.5rem;
+    margin-bottom: -2px;
+}
+
+
+  
+
         </style>
-       <div class="slider"> 
+        <div class="body2">
+       <div class="slider1"> 
         <%
           Connection conn =null;
           Statement st =null;
@@ -147,7 +201,7 @@ a{
          
         <div class="col-sm-3">
            
-        <div class="container">
+        <div class="container1">
             
             <ul>
                 <li class="item-a">
@@ -163,7 +217,10 @@ a{
             </ul>
         </div>
         </div>
-               
+                     <div>
+                         <textarea class="checkLimit" maxlength="100"></textarea>
+<span id="count">100</span> Remaining Character
+                     </div>
       
                <%
                  }
@@ -171,9 +228,34 @@ a{
                  %>
                     
         </div> 
+        </div>
+                 <div class="body5">
+                 <div id="block">
+                     <h1>uber</h1>
+                 <div class="imgZoom">
+                    <a href="link 1"><img src="whatsapp.png"></a> 
+                 </div> 
+                 </div><br>
+                  <div id="block">
+                 <div class="imgZoom">
+                     <a href="link 1"><img src="whatsapp.png"></a>   
+                 </div>  
+                 </div><br>
+                  <div id="block">
+                 <div class="imgZoom">
+                     <a href="link 1"><img src="whatsapp.png"></a>   
+                 </div>  
+                 </div><br>
+                  <div id="block">
+                 <div class="imgZoom">
+                     <a href="link 1"><img src="whatsapp.png"></a>   
+                 </div>  
+                 </div><br>
+                      
+                 </div>
    
     <script type="text/javascript">
-        $('.slider').slick({
+        $('.slider1').slick({
   dots: true,
   infinite: false,
   speed: 300,
@@ -209,5 +291,13 @@ a{
   ]
 });
     </script>
+    
+    <script language="javascript" type="text/javascript">
+    var maxLength = 100;
+    $('.checkLimit').keyup(function() {
+      var textlen = maxLength - $(this).val().length;
+      $('#count').text(textlen);
+    });
+</script>
     </body>   
 </html>

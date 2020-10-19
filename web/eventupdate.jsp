@@ -1,6 +1,6 @@
 <%-- 
-    Document   : hotelupdate
-    Created on : Oct 12, 2020, 9:52:16 AM
+    Document   : eventupdate
+    Created on : Oct 19, 2020, 8:52:43 AM
     Author     : Isuru Mendis
 --%>
 
@@ -24,8 +24,12 @@
     </head>
     <body>
         
+        
             <style>
-     <%@ include file="css/tab2.css"%>
+    
+      <%@ include file="css/tab.css"%>
+      
+      
 
 </style>
         
@@ -47,29 +51,28 @@
           <li ><a href="">About Us</a></li>
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
-          
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>
-          <li class="active"><a href="hotelupdate.jsp">Hotel Details</a></li>
+           <li class="active"><a href="eventupdate.jsp">Event Details</a></li>
           </ul>
-         <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+        <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
             <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
          </div>
      </div>
      </div>
         
-        <div class="tabbody">
+<div class="tabbody">
         <div class="col-sm-8">
             <div class="panel-body">
-                <table id="tbl-hotel" class="table table-responsive table-bordered" cellpadding ="0" >
+                <table id="tbl-hotel" class="table table-responsive table-bordered" cellpadding ="0" width="100%" >
                     <thead>
                         <tr class="tabrow">
                             <th>ID</th>
-                            <th>Hotel Name</th>
+                            <th>Title</th>
+                            <th>Sub-Title</th>
                             <th>Description</th>
+                            <th>Reporter</th>
                             <th>Contact No</th>
-                            <th>E-mail</th>
-                            <th>Name</th>
                             <th>Links</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -83,7 +86,7 @@
                         
                        Class.forName("com.mysql.jdbc.Driver");
                        con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
-                       String qry = "select * from booking";
+                       String qry = "select * from uplod";
                        Statement st = con.createStatement();
                        rs = st.executeQuery(qry);
                        
@@ -97,13 +100,13 @@
                         
                         <tr>
                             <td><%=rs.getString("id")%></td>
-                            <td><%=rs.getString("hotelname")%></td>
+                            <td><%=rs.getString("title")%></td>
+                            <td><%=rs.getString("stitle")%></td>
                             <td><%=rs.getString("description")%></td>
-                            <td><%=rs.getString("contactno")%></td>
-                            <td><%=rs.getString("email")%></td>
-                            <td><%=rs.getString("name")%></td>
+                            <td><%=rs.getString("reporter")%></td>
+                            <td><%=rs.getString("pnumber")%></td>
                             <td><%=rs.getString("links")%></td>
-                            <td><a href="update.jsp?id=<%=id%>">Edit</a></td>
+                            <td><a href="eventedit.jsp?id=<%=id%>">Edit</a></td>
                             <td><a href="delete.jsp?id=<%=id%>">Delete</a></td>
                             
                         </tr>
@@ -118,7 +121,7 @@
             </div>
             
         </div>
-        </div>
+</div>
         
     </body>
 </html>

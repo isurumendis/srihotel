@@ -25,7 +25,7 @@ public class admin extends HttpServlet {
              String pw = request.getParameter("pw");
              if(un != null && pw != null){
              if(pw.equals("admin123")&& un.equals("admin")){
-                 response.sendRedirect("adminp.jsp");
+                 response.sendRedirect("adminhome.jsp");
              } 
              else{
                  out.println("Invalid Username Or Password");

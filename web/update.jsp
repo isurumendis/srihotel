@@ -20,11 +20,21 @@
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/admincss.css">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+      <script src="js/bootstrap.min.js"></script>
         <title>JSP Page</title>
     </head>
     <body>
         
          <style>
+             
+             <%@ include file="css/style1.css"%>
             
             body{
        background-image: url("ss.jpg");
@@ -88,13 +98,13 @@
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
-          <li ><a href="">Sri Lankan Beaches</a></li>
-           <li ><a href="">Wild Life & Nature</a></li>
-          <li ><a href="adminC.jsp">Add Post</a></li>
-          <li class="active"><a href="booking.jsp">Add Hotels</a></li>
-          <li ><a href="rateRRC.jsp">Ratings</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
+          <li class="active"><a href="booking.jsp">Hotel Update</a></li>
          </ul>
+           <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
+        
      </div>
      </div>
         

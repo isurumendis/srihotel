@@ -1,6 +1,6 @@
 <%-- 
-    Document   : newuserhome
-    Created on : Oct 14, 2020, 10:35:39 AM
+    Document   : adminhome
+    Created on : Oct 19, 2020, 10:45:07 AM
     Author     : Isuru Mendis
 --%>
 
@@ -53,17 +53,19 @@
        
         <div class="collapse navbar-collapse" id="coll" >
          <ul class="nav navbar-nav">
-          <li class="active"><a href="userhome.jsp">Home</a></li>
-          <li ><a href="Local.php">About Us</a></li>
+          <li class="active"><a href="adminhome.jsp">Home</a></li>
+          <li ><a href="">About Us</a></li>
           <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
+          <li ><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
           
           
           
          </ul>
          
-            <button type="submit" class="btn btn-warning btnfoc2"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+           <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
          <form name="form1"    onclick="validate()" class="navbar-form navbar-right">
          
 </form>
@@ -96,11 +98,11 @@
                <h3>Best Idea To Visit Sri Lanka..!<span></span></h3>
                </div>
             </div>
-                    <p>Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia,
-                        located in the Indian Ocean southwest of the Bay of Bengal and southeast of the Arabian Sea 
-                        Travel and find happiness within yourself. Allow us to convince you. You won't regret it. 
-                        Find the best time to go and the best places to visit for a true Sri Lanka experience.Find travel ideas 
-                        for planning your holiday to Sri Lanka. Discover things to see and do, places to stay and more.</p>        
+                    <p>Im trying to get a header to fly in and after that when you hover it, it should shake (both with css3 animation). 
+                        It flies in the way i want, also shakes, but after ive removed the mouse from the element it goes back to the 
+                        original margin-right (it had before the flyin animation) even though ive set `-animation-fill-mode: forwards; 
+                        When i look in chromedevtools the element never changes its margin-right (even though the animation works..).
+                        Can i fix this?</p>        
            </div>
                 
                 <div class="slide">
@@ -135,21 +137,23 @@
         <div class="services container">
             <div class="service-top">
                 <h1 class="section-title">Ser<span>Vi</span>ces</h1>
-                <p>Apart from being a large tea producer, Sri Lanka is famous for its cinnamon, an indispensable ingredient for many of its fabulous food.
-                    It is said to have originated from the teardrop nation and first found by the Egyptians in 2000 BC. Today, Sri Lanka is still a leading 
-                    exporter of the world's cinnamon.World best tourism services are given in Sri Lanka.The central feature of Sri Lankan cuisine is boiled 
-                    or steamed rice, served with a curry of fish or chicken , along with other curries made with vegetables, lentils, or fruits. Dishes are 
-                    accompanied by pickled fruits or vegetables, chutneys, and sambols.The popular and most basic form of tourism is leisure tourism, under 
-                    which family tourism, cultural tourism, religious tourism, sports tourism are included. Business tourism is also getting momentum. 
-                    Ceylon Tea, being that Sri Lanka is most known for, is considered by the cleanest tea in the world by the ISO (with the least pesticide 
-                    residue quantities). So if you like tea, you'll love Sri Lanka!  </p>
+                <p>Today we are going create a website which will be a nice one page website.
+                  This is for html & css practice and through this project we will see many things
+                   like how we can make our website fully responsive, so many thing about pseudo 
+                   elements, hamburger, Off-canvas menu and many more.Today we are going create a 
+                   website which will be a nice one page website.This is for html & css practice and 
+                   through this project we will see many things like how we can make our website 
+                   fully responsive, so many thing about pseudo elements, hamburger, Off-canvas 
+                   menu and many more. </p>
             </div>
             <div class="service-bottom">
              <div class="service-item">
               <div class="icon"> <img src="icon.png" alt="icon">
                     </div>
-                    <h2>Events</h2>
-                    <p>There’s so much to do here in Sri Lanka that you wouldn’t want to miss- a here’s your one-stop platform for vibrant and dynamic Sri Lanka Events.bringing the world live experiences.</p>
+                    <h2>PC Repair</h2>
+                    <p>Today we are going create a website which will be a nice one page website.
+                         This is for html & css practice and through this project
+                          we will see many things like how we can</p>
                      <div>
                 <a href="eventRC.jsp"><<<< Click Here To Visit >>>></a>
             </div>
@@ -157,8 +161,10 @@
         <div class="service-item">
          <div class="icon"> <img src="icon.png" alt="icon">
             </div>
-            <h2>Hotels</h2>
-            <p>The total number of SLTDA registered accommodation establishments as at 31st March 2018 was 2,131. The number of classified tourist hotels was 141 and among them, 20 were five-star hotels.</p>
+            <h2>PC Repair</h2>
+            <p>Today we are going create a website which will be a nice one page website.
+               This is for html & css practice and through this project
+               we will see many things like how we can</p>
             <div>
                 <a href="Reservation.jsp"><<<< Click Here To Visit >>>></a>
             </div>
@@ -166,8 +172,10 @@
         <div class="service-item">
         <div class="icon"> <img src="icon.png" alt="icon">
          </div>
-         <h2>Historical</h2>
-         <p>Visit Sri Lankan historical places and explore Cultural Triangle namely sacred city of Anuradhapura,ancient city of Polonnaruwa, and the ancient city of Sigiriya.to visit in Sri Lanka that are of historical importance;</p>
+         <h2>PC Repair</h2>
+         <p>Today we are going create a website which will be a nice one page website.
+            This is for html & css practice and through this project
+            we will see many things like how we can</p>
           <div>
                 <a href="#"><<<< Click Here To Visit >>>></a>
             </div>

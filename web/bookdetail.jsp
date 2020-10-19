@@ -1,6 +1,6 @@
 <%-- 
-    Document   : hotelupdate
-    Created on : Oct 12, 2020, 9:52:16 AM
+    Document   : bookdetail
+    Created on : Oct 19, 2020, 3:45:25 PM
     Author     : Isuru Mendis
 --%>
 
@@ -25,7 +25,7 @@
     <body>
         
             <style>
-     <%@ include file="css/tab2.css"%>
+     <%@ include file="css/tab5.css"%>
 
 </style>
         
@@ -50,7 +50,8 @@
           
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>
-          <li class="active"><a href="hotelupdate.jsp">Hotel Details</a></li>
+          <li class="active"><a href="bookdetail.jsp">Hotels Booking Details</a></li>
+          
           </ul>
          <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
             <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
@@ -65,15 +66,17 @@
                     <thead>
                         <tr class="tabrow">
                             <th>ID</th>
-                            <th>Hotel Name</th>
-                            <th>Description</th>
-                            <th>Contact No</th>
+                            <th>Post ID</th>
+                            <th>Full name</th>
                             <th>E-mail</th>
-                            <th>Name</th>
-                            <th>Links</th>
+                            <th>Contact No</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Number Of Rooms</th>
+                            <th>PassPort Number</th>
+                            <th>Message</th>
                             <th>Edit</th>
                             <th>Delete</th>
-                            
                         </tr>
                         
                         <%
@@ -83,7 +86,7 @@
                         
                        Class.forName("com.mysql.jdbc.Driver");
                        con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
-                       String qry = "select * from booking";
+                       String qry = "select * from bookhotel";
                        Statement st = con.createStatement();
                        rs = st.executeQuery(qry);
                        
@@ -97,12 +100,15 @@
                         
                         <tr>
                             <td><%=rs.getString("id")%></td>
-                            <td><%=rs.getString("hotelname")%></td>
-                            <td><%=rs.getString("description")%></td>
-                            <td><%=rs.getString("contactno")%></td>
-                            <td><%=rs.getString("email")%></td>
+                            <td><%=rs.getString("postid")%></td>
                             <td><%=rs.getString("name")%></td>
-                            <td><%=rs.getString("links")%></td>
+                            <td><%=rs.getString("email")%></td>
+                            <td><%=rs.getString("phonenumber")%></td>
+                            <td><%=rs.getString("checkin")%></td>
+                            <td><%=rs.getString("checkout")%></td>
+                            <td><%=rs.getString("norooms")%></td>
+                            <td><%=rs.getString("ppnumber")%></td>
+                            <td><%=rs.getString("message")%></td>
                             <td><a href="update.jsp?id=<%=id%>">Edit</a></td>
                             <td><a href="delete.jsp?id=<%=id%>">Delete</a></td>
                             

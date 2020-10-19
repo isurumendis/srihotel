@@ -1,6 +1,6 @@
 <%-- 
-    Document   : hotel
-    Created on : Oct 13, 2020, 1:09:59 PM
+    Document   : eventbook
+    Created on : Oct 19, 2020, 9:47:40 AM
     Author     : Isuru Mendis
 --%>
 
@@ -95,12 +95,13 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="adminhome.jsp">Home</a></li>
+          <li ><a href="newuserhome.jsp">Home</a></li>
           <li ><a href="">About Us</a></li>
         
           <li ><a href="">Historical</a></li>
-          <li ><a href="eventR.jsp">Events</a></li>
+          <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
+         
           <li class="active"><a href="hotel.jsp">Reservation Request Form</a></li>
           
          </ul>
@@ -114,7 +115,7 @@
     <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...RESERVATION FORM...</b></h1></center><br>
         
         <div class="container" id="imag">
-        <form name="hform" action="data" method="get">
+        <form name="hform" action="eventdata" method="get">
             
              <%
             
@@ -126,7 +127,7 @@
                        con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
                        
                        String id = request.getParameter("id");
-                       pst = con.prepareStatement("select * from booking where id = ? ");
+                       pst = con.prepareStatement("select * from uplod where id = ? ");
                        pst.setString(1, id);
                        rs = pst.executeQuery();
                        
@@ -136,31 +137,31 @@
             %>
             
             <div class="form-group  form-group1 " >
-                Post ID:<input type="text" name="t0" class="form-control title8" value="<%= rs.getString("id")%>" placeholder="ID Number">
+                Post ID:<input type="text" name="n0" class="form-control title8" value="<%= rs.getString("id")%>" placeholder="ID Number">
             </div>
             <div class="form-group  form-group1 " >
-                Enter Name:<input type="text" name="t1" class="form-control title8" value="" placeholder="Full Name">
+                Enter Name:<input type="text" name="n1" class="form-control title8" value="" placeholder="Full Name">
             </div>
             <div class="form-group  form-group1 " >
-                Enter Email:<input type="text" name="t2"  class="form-control title8" value="" placeholder="Email">
+                Enter Email:<input type="text" name="n2"  class="form-control title8" value="" placeholder="Email">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Phone Number:<input type="text" name="t3"  class="form-control title8" value="" placeholder="Phone Number">
+                Enter Phone Number:<input type="text" name="n3"  class="form-control title8" value="" placeholder="Phone Number">
               </div>
             <div class="form-group  form-group1 " >
-            Enter Check In:<input type="date" name="t4"  class="form-control title8" value="">
+            Date Of Birth<input type="date" name="n4"  class="form-control title8" value="" placeholder="Date Of Birth">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Check Out:<input type="date" name="t5"  class="form-control title8" value="">
+               Number Of Participants:<input type="text" name="n5"  class="form-control title8" value="" placeholder="Number Of Participants">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Number Of Rooms:<input type="text" name="t6"  class="form-control title8" value="" placeholder="Number Of Rooms">
+              National ID Number:<input type="text" name="n6"  class="form-control title8" value="" placeholder="National ID Number">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Passport Number:<input type="text" name="t7"  class="form-control title8" value="" placeholder="Passport Number">
+                Enter Passport Number:<input type="text" name="n7"  class="form-control title8" value="" placeholder="Passport Number">
               </div>
             <div class="form-group  form-group1 " >
-            Enter Message:<input type="text" name="t8"  class="form-control title8" value="" placeholder="More details about your inquary">
+            Add Message Any Other Request:<input type="text" name="n8"  class="form-control title8" value="" placeholder="More details about your inquary">
               </div>
              <% } %>
               <div class="form-group  form-group1 " >
