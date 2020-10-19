@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Reservation
-    Created on : Aug 8, 2020, 10:04:56 AM
+    Document   : eventA
+    Created on : Oct 19, 2020, 10:38:13 AM
     Author     : Isuru Mendis
 --%>
 
@@ -57,13 +57,16 @@
        
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
-          <li ><a href="newuserhome.jsp">Home</a></li>
+         <li ><a href="adminhome.jsp">Home</a></li>
           <li ><a href="">About Us</a></li>
           <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li class="active"><a href="Reservation.jsp">Hotels Booking</a></li>
+          <li class="active"><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
+          
           </ul>
-         <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+         <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+         <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
          </div>
      </div>
      </div>
@@ -79,38 +82,31 @@
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
                 <input type="radio" name="radio-btn" id="radio4">
-                <input type="radio" name="radio-btn" id="radio5">
                   
                 <div class="slide first">
-                    <img src="h3.jpg" alt="">
+                    <img src="slide1.jpg" alt="">
                     
                     
         <div class="hero container">
             <div>
-               <h3>Sri Lanka Best Hospitality Industry<span></span></h3>
+               <h3>Best Idea To Visit Sri Lanka..!<span></span></h3>
                </div>
             </div>
-                    <p>Sri Lanka is a country that is strategically positioned in the Indian ocean; as a medium sized landmass,
-                      the country has the potential to attract tourists, due to the numerous attractive features it offers in 
-                      terms of geographical diversity, a rich cultural heritage, hospitality features, developed infrastructure
-                      features etc. Thus, the country could be considered as a future growth hotspot for the tourism industry 
-                      in the future. The input from travel and the tourism sector to the national economy remains high, with 
-                      a contribution of 5.1% towards GDP. This remains unchanged in 2016 as well as in 2017. However, it is 
-                      estimated that this contribution will grow to the level of 6.6% by 2027. There is a high level of diversity
-                      in terms of landscapes and attractions the country can offer.</p>        
+                    <p>Im trying to get a header to fly in and after that when you hover it, it should shake (both with css3 animation). 
+                        It flies in the way i want, also shakes, but after ive removed the mouse from the element it goes back to the 
+                        original margin-right (it had before the flyin animation) even though ive set `-animation-fill-mode: forwards; 
+                        When i look in chromedevtools the element never changes its margin-right (even though the animation works..).
+                        Can i fix this?</p>        
            </div>
                 
                 <div class="slide">
-                    <img src="h2.jpg" alt="">
+                    <img src="slide2.jpg" alt="">
                     
                 </div>
                 <div class="slide">
-                    <img src="h1_1.jpg" alt="">
+                    <img src="slide3.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="h4.jpg" alt="">
-                </div>
-                 <div class="slide">
                     <img src="slide4.jpg" alt="">
                 </div>
   
@@ -119,7 +115,6 @@
                     <div class="auto-btn2"></div>
                     <div class="auto-btn3"></div>
                     <div class="auto-btn4"></div>
-                    <div class="auto-btn5"></div>
                 </div>
             </div>
             
@@ -128,7 +123,6 @@
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
                 <label for="radio4" class="manual-btn"></label>
-                <label for="radio5" class="manual-btn"></label>
             </div>
         </div>   
 </div>
@@ -146,7 +140,7 @@
                  Class.forName("com.mysql.jdbc.Driver");
                  conn=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
                  st = conn.createStatement();
-                 String qry="select * from booking";
+                 String qry="select * from uplod";
                  rs=st.executeQuery(qry);
                 
                  
@@ -175,10 +169,10 @@
                          
                      </div>
                     </div>
-                         <p class="marvel2"><span class="span1">Contact No:</span><br><%=rs.getString(4)%></p>
-                     <p class="marvel3"><span class="span1">Email:</span><br><%=rs.getString(5)%></p>
+                         <p class="marvel2"><span class="span1">Organizer:</span><br><%=rs.getString(5)%></p>
+                     <p class="marvel3"><span class="span1">Contact No:</span><br><%=rs.getString(6)%></p>
                      <div class="booki">
-                         <a href="hotel.jsp?id=<%=id%>">Book Now</a>
+                         <a href="eventbook.jsp?id=<%=id%>">Book Now</a>
                      </div>
                      <div class="booki2">
                          <a href="<%=rs.getString(7)%>">Details >>></a>
@@ -208,17 +202,15 @@
                      <section id="services">
         <div class="services container">
             <div class="service-top">
-                <h1 class="section-title"><span>Sri</span>Lanka</h1>
-                <p>Sri Lanka's documented history spans 3,000 years, with evidence of prehistoric human settlements 
-                    dating back at least 125,000 years. It has a rich cultural heritage, and the first known 
-                    Buddhist writings of Sri Lanka, the Pāli Canon, date back to the Fourth Buddhist council in 
-                    29 BCE.Its geographic location and deep harbours made it of great strategic importance
-                    from the time of the ancient Silk Road through to the modern Maritime Silk Road.Its 
-                    location as a major trading hub made it known to both the far East as well as the European continent 
-                    from as far back as the Anuradhapura period. The country's trade in luxury goods and spices attracted 
-                    traders of many nations, creating Sri Lanka's diverse population. During a period of great political 
-                    crisis the Portuguese, whose arrival in Sri Lanka was largely accidental, sought to control the island's 
-                    maritime regions and its lucrative external trade. </p>
+                <h1 class="section-title">Ser<span>Vi</span>ces</h1>
+                <p>Today we are going create a website which will be a nice one page website.
+                  This is for html & css practice and through this project we will see many things
+                   like how we can make our website fully responsive, so many thing about pseudo 
+                   elements, hamburger, Off-canvas menu and many more.Today we are going create a 
+                   website which will be a nice one page website.This is for html & css practice and 
+                   through this project we will see many things like how we can make our website 
+                   fully responsive, so many thing about pseudo elements, hamburger, Off-canvas 
+                   menu and many more. </p>
             </div>
              </div>
         </div>
@@ -325,7 +317,7 @@
             setInterval(function(){
                 document.getElementById('radio' + counter).checked = true;
                 counter++;
-                if(counter > 5){
+                if(counter > 4){
                     counter = 1;
                 }
             },5000);

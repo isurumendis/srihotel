@@ -177,7 +177,7 @@
     color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
-    
+    letter-spacing: .2rem;
     text-align: center;
 }
 .section-title span{
@@ -188,7 +188,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px ;
+    margin-top: -610px ;
+    z-index: 1;
 }
 #services .service-item{
     flex-basis: 22%;
@@ -333,7 +334,7 @@ margin-bottom: 5px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
-    margin-top: -100px;
+    margin-top: -10px;
 }
 #footer h2{
     color: white;
@@ -497,4 +498,5 @@ filter: grayscale(0);
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #40D3DC;
 }
+
 

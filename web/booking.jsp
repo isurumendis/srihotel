@@ -17,9 +17,10 @@
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/admincss.css">
-    <script type="text/javascript">
-        
-        </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+                   
         <title>WELCOME TO SRI LANKA</title>
     </head>
     <body>
@@ -60,12 +61,9 @@
             
         </style>
         
-        <div class="navbar navbar-default">
+      <div class="navbar navbar-default">
     <div class="container-fluid">
-      
-
-
-      <div class="navbar-header">
+     <div class="navbar-header">
          <button class="navbar-toggle" data toggle="collapse" data-target=".navbar-collapse">
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
@@ -78,17 +76,15 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="userhome.jsp">Home</a></li>
+            <li ><a href="newuserhome.jsp">Home</a></li>
           <li ><a href="">About Us</a></li>
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
-          <li ><a href="">Sri Lankan Beaches</a></li>
-           <li ><a href="">Wild Life & Nature</a></li>
-          <li ><a href="adminC.jsp">Add Post</a></li>
           <li class="active"><a href="booking.jsp">Add Hotels</a></li>
-          <li ><a href="rateRRC.jsp">Ratings</a></li>
+          
          </ul>
+            <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
              </div>
      </div>
      </div>
@@ -103,7 +99,8 @@
                 Hotel Name:<input type="text" name="b1" class="form-control title9" value="" placeholder="Hotel Name">
             </div>
             <div class="form-group  form-group10 " >
-                Description:<input type="text" name="b2"  class="form-control title9" value="" placeholder="Description">
+                 Description:<textarea type="text" name="b2"  class="form-control title9 checkLimit" value="" placeholder="Description"  maxlength="150"></textarea>
+                 <span id="count">150</span> Remaining Character
               </div>
             <div class="form-group  form-group10 " >
                 Contact Number:<input type="text" name="b3"  class="form-control title9" value="" placeholder="Contact Number">
@@ -118,13 +115,15 @@
               </div>
             
          <div class="form-group  form-group10 " >
-            Website URL:<input type="text" name="b6"  class="form-control title9" value="" placeholder="Website URL">
+            Website URL:<input type="text" name="b6"  class="form-control title9" value="https://" >
               </div>
             
              <div class="form-group  form-group10 " >
              <button type="submit" value="Submit" class="btn btn-success">Submit</button>
              <button type="reset" value="Cancel" class="btn btn-warning">Cancel</button>
              </div>
+            
+  
              <%--
               String hotelname= request.getParameter("b1");
              String description= request.getParameter("b2");
@@ -157,9 +156,18 @@
              
              
              --%>
+  
         </form>
             
         </div>
+ 
+              <script language="javascript" type="text/javascript">
+    var maxLength = 150;
+    $('.checkLimit').keyup(function() {
+      var textlen = maxLength - $(this).val().length;
+      $('#count').text(textlen);
+    });
+</script>
     </body>
 </html>
 

@@ -61,23 +61,23 @@
           
           <li ><a href="adminhome.jsp">Home</a></li>
           <li ><a href="">About Us</a></li>
-          <li ><a href="admin.jsp">Admin Account</a></li>
           <li ><a href="">Historical</a></li>
-          <li ><a href="eventR.jsp">Events</a></li>
+          <li ><a href="eventA.jsp">Events</a></li>
           <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
-          <li ><a href="Details.jsp">Details</a></li>
           <li class="active"><a href="adminp.jsp">Add Post</a></li>
-          <li ><a href="rateRR.jsp">Ratings</a></li>
+          
           
          </ul>
+           <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+           <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>
        <br><br><br><br><br><br><br><br>
     <center>
         <button type="submit" class="btn btn-info btnsi "><a href="SLheritage.jsp" class="btnfocl btnsi">Sri Lankan Historical</a> </button><br><br>
-       <button type="submit" class="btn btn-primary btnsi"><a href="event.jsp" class="btnfocl btnsi">Events Organize</a> </button><br><br>
-       <button type="submit" class="btn btn-danger btnsi"><a href="bookingA.jsp" class="btnfocl btnsi">Hotels Booking</a> </button><br><br>
+       <button type="submit" class="btn btn-primary btnsi"><a href="eventC.jsp" class="btnfocl btnsi">Events Organize</a> </button><br><br>
+       <button type="submit" class="btn btn-danger btnsi"><a href="booking.jsp" class="btnfocl btnsi">Hotels Booking</a> </button><br><br>
        <button type="submit" class="btn btn-warning btnsi"><a href="" class="btnfocl btnsi">Sri Lankan Beaches</a> </button><br><br>
        <button type="submit" class="btn btn-success btnsi"><a href="" class="btnfocl btnsi">Wild Life & Nature</a> </button><br><br>
     </center>

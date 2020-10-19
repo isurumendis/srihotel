@@ -1,12 +1,13 @@
 <%-- 
-    Document   : eventC
-    Created on : Aug 8, 2020, 12:26:48 PM
-    Author     : Ravindu
+    Document   : eventedit
+    Created on : Oct 19, 2020, 8:58:03 AM
+    Author     : Isuru Mendis
 --%>
 
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import=" java.sql.*"%>
+<%@page import="java.io.*" %>
+<%@page language="java" %> 
 <!DOCTYPE html>
 <html>
    <head>
@@ -59,30 +60,53 @@
           <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
-          <li class="active"><a href="eventC.jsp">SL Events</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
+          <li class="active"><a href="eventC.jsp">Events Update</a></li>
          </ul>
-           <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+          <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>
         
     <div class="container" id="imag">
-  <form name="form3" action="image " method ="POST">
-      
+  <form name="form3" action="eveedit" method ="get">
+      <%
+            
+                        Connection con;
+                        PreparedStatement pst;
+                        ResultSet rs;
+                        
+                       Class.forName("com.mysql.jdbc.Driver");
+                       con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
+                       
+                       String id = request.getParameter("id");
+                       pst = con.prepareStatement("select * from uplod where id = ? ");
+                       pst.setString(1, id);
+                       rs = pst.executeQuery();
+                       
+                      while(rs.next())
+                      {
+            
+            %>
+            
+             <div  class="form-group  form-group1 " >
+                ID:<input type="text" name="e0" class="form-control title" value="<%= rs.getString("id")%>" placeholder="ID Number">
+            </div>
       
   <div class="form-group  form-group1 " >
    <lable for="title">Title:</lable>
-   <input type="text" name="e2" class="form-control title" placeholder="Enter Title">
+   <input type="text" name="e2" class="form-control title" value="<%= rs.getString("title")%>" placeholder="Enter Title">
    </div>
 
    <div class="form-group  form-group1 " >
    <lable for="subtitle">Subtitle:</lable>
-   <input type="text" name="e3" class="form-control title1" placeholder="Enter Subtitle">
+   <input type="text" name="e3" class="form-control title1" value="<%= rs.getString("stitle")%>" placeholder="Enter Subtitle">
    </div>
 
    <div class="form-group  form-group1 " >
    <lable for="discription">Discription:</lable>
-   <textarea type="text" name="e4"  class="form-control title2 checkLimit" value="" placeholder="Description"  maxlength="150"></textarea>
+   <textarea type="text" name="e4"  class="form-control title2 checkLimit" value="<%= rs.getString("description")%>" placeholder="Description"  maxlength="150"></textarea>
    <span id="count">150</span> Remaining Character
    </div>
 
@@ -90,19 +114,19 @@
 
    <div class="form-group  form-group1 form1" >
    <lable for="reporter">Reporter:</lable>
-   <input type="text" name="e5" class="form-control title4" placeholder="Enter Name">
+   <input type="text" name="e5" class="form-control title4" value="<%= rs.getString("reporter")%>" placeholder="Enter Name">
    </div>
       
        <div class="form-group  form-group1 form1" >
    <lable for="phone number">Phone Number:</lable>
-   <input type="text" name="e6" class="form-control title4" placeholder="Enter Phone Number">
+   <input type="text" name="e6" class="form-control title4" value="<%= rs.getString("pnumber")%>" placeholder="Enter Phone Number">
    </div>
    
   <div class="form-group  form-group1 form1" >
    <lable for="phone number">Website URL:</lable>
-   <input type="text" name="e7" class="form-control title4" value="https://">
+   <input type="text" name="e7" class="form-control title4" value="<%= rs.getString("links")%>" value="https://">
    </div>    
-      
+        <% } %>
   <div class="form-group  form-group1 " >
   <button type="submit" value="Submit" class="btn btn-success">Submit</button>
   <button type="reset" value="Cancel" class="btn btn-warning">Cancel</button>
