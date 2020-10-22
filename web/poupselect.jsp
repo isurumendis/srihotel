@@ -125,50 +125,48 @@
              <div class="service-item">
               <div class="icon"> <img src="icon.png" alt="icon">
                     </div>
-                    <h2>Hotel Details</h2>
-                    <p>Today we are going create a website which will be a nice one page website.
-                         This is for html & css practice and through this project
-                          we will see many things like how we can</p>
+                     <a href="hotelupdate.jsp">Hotel Details</a>
+                   
                      <div>
-                <a href="hotelupdate.jsp"><<<< Click Here To Visit >>>></a>
+               
             </div>
                  </div>
         <div class="service-item">
          <div class="icon"> <img src="icon.png" alt="icon">
             </div>
-            <h2>Event Details </h2>
-            <p>Today we are going create a website which will be a nice one page website.
-               This is for html & css practice and through this project
-               we will see many things like how we can</p>
+            <a href="eventupdate.jsp">Event Details </a>
+           
             <div>
-                <a href="eventupdate.jsp"><<<< Click Here To Visit >>>></a>
+              
             </div>
                 </div>
         <div class="service-item">
         <div class="icon"> <img src="icon.png" alt="icon">
          </div>
-         <h2>Hotel Booking</h2>
-         <p>Today we are going create a website which will be a nice one page website.
-            This is for html & css practice and through this project
-            we will see many things like how we can</p>
+        <a href="bookdetail.jsp">Hotel Booking</a>
+         
           <div>
-                <a href="bookdetail.jsp"><<<< Click Here To Visit >>>></a>
+                
             </div>
             </div>   
                  
                  <div class="service-item">
          <div class="icon"> <img src="icon.png" alt="icon">
             </div>
-            <h2>Event Interest</h2>
-            <p>Today we are going create a website which will be a nice one page website.
-               This is for html & css practice and through this project
-               we will see many things like how we can</p>
+            <a href="interestdetail.jsp">Event Interest</a>
             <div>
-                <a href="interestdetail.jsp"><<<< Click Here To Visit >>>></a>
+               
             </div>
                 </div>
 
-
+         <div class="service-item">
+         <div class="icon"> <img src="icon.png" alt="icon">
+            </div>
+            <a href="userdetails.jsp">Users Details</a>
+            <div>
+                
+            </div>
+                </div>
             </div>
         </div>
          </section>

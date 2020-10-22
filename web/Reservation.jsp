@@ -82,7 +82,7 @@
                 <input type="radio" name="radio-btn" id="radio5">
                   
                 <div class="slide first">
-                    <img src="h3.jpg" alt="">
+                    <img src="slide4.jpg" alt="">
                     
                     
         <div class="hero container">
@@ -111,7 +111,7 @@
                     <img src="h4.jpg" alt="">
                 </div>
                  <div class="slide">
-                    <img src="slide4.jpg" alt="">
+                    <img src="h3.jpg" alt="">
                 </div>
   
                 <div class="navigation-auto">

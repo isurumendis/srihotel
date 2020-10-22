@@ -1,6 +1,6 @@
 <%-- 
-    Document   : bookdetail
-    Created on : Oct 19, 2020, 3:45:25 PM
+    Document   : userdetails
+    Created on : Oct 21, 2020, 11:15:06 AM
     Author     : Isuru Mendis
 --%>
 
@@ -50,7 +50,7 @@
           
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>
-          <li class="active"><a href="bookdetail.jsp">Hotels Booking Details</a></li>
+          <li class="active"><a href="userdetails.jsp">User Details</a></li>
           
           </ul>
          <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
@@ -66,15 +66,14 @@
                     <thead>
                         <tr class="tabrow">
                             <th>ID</th>
-                            <th>Post ID</th>
                             <th>Full Name</th>
+                            <th>Last name</th>
                             <th>E-mail</th>
-                            <th>Contact No</th>
-                            <th>Check In</th>
-                            <th>Check Out</th>
-                            <th>Number Of Rooms</th>
+                            <th>Password</th>
+                            <th>Country</th>
+                            <th>Address</th>
+                            <th>Phone Number</th>
                             <th>PassPort Number</th>
-                            <th>Message</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
@@ -86,7 +85,7 @@
                         
                        Class.forName("com.mysql.jdbc.Driver");
                        con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
-                       String qry = "select * from bookhotel";
+                       String qry = "select * from registerf";
                        Statement st = con.createStatement();
                        rs = st.executeQuery(qry);
                        
@@ -100,16 +99,15 @@
                         
                         <tr>
                             <td><%=rs.getString("id")%></td>
-                            <td><%=rs.getString("postid")%></td>
-                            <td><%=rs.getString("name")%></td>
+                            <td><%=rs.getString("fname")%></td>
+                            <td><%=rs.getString("lname")%></td>
                             <td><%=rs.getString("email")%></td>
-                            <td><%=rs.getString("phonenumber")%></td>
-                            <td><%=rs.getString("checkin")%></td>
-                            <td><%=rs.getString("checkout")%></td>
-                            <td><%=rs.getString("norooms")%></td>
+                            <td><%=rs.getString("password")%></td>
+                            <td><%=rs.getString("country")%></td>
+                            <td><%=rs.getString("address")%></td>
+                            <td><%=rs.getString("pnumber")%></td>
                             <td><%=rs.getString("ppnumber")%></td>
-                            <td><%=rs.getString("message")%></td>
-                            <td><a href="hotelbookup.jsp?id=<%=id%>">Edit</a></td>
+                            <td><a href="registerupdate.jsp?id=<%=id%>">Edit</a></td>
                             <td><a href="delete.jsp?id=<%=id%>">Delete</a></td>
                             
                         </tr>

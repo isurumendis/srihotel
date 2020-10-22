@@ -71,7 +71,7 @@
      </div>
      </div>
         
-      <div class="body1">
+     <div class="body1">
     
         <div class="slider">
             <div class="v1"></div>
@@ -89,14 +89,17 @@
                     
         <div class="hero container">
             <div>
-               <h3>Best Idea To Visit Sri Lanka..!<span></span></h3>
+               <h3>Get Wonderful Event Experience<span></span></h3>
                </div>
             </div>
-                    <p>Im trying to get a header to fly in and after that when you hover it, it should shake (both with css3 animation). 
-                        It flies in the way i want, also shakes, but after ive removed the mouse from the element it goes back to the 
-                        original margin-right (it had before the flyin animation) even though ive set `-animation-fill-mode: forwards; 
-                        When i look in chromedevtools the element never changes its margin-right (even though the animation works..).
-                        Can i fix this?</p>        
+                    <p>Browse our guide to the latest upcoming events in Sri Lanka including annual events and festivals
+                        throughout the year around the island on Know Sri Lanka.An event is something that happens, especially 
+                        when it is unusual or important. You can use events to describe all the things that are happening in a
+                        particular situation. ... An event is a planned and organized occasion.Discover the fantastic sustainable 
+                        tourism trade shows, conferences and events for your tour.Tourism is travel for pleasure or business; also
+                        the theory and practice of touring, the business ... Globally, international tourism receipts (the travel
+                        item in balance of ... to a type of tourism, linked to the cinema, which relates to events, conventions 
+                        and more like the case of the Dizionario del Turismo Cinematografico.</p>        
            </div>
                 
                 <div class="slide">
@@ -107,7 +110,7 @@
                     <img src="slide3.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="slide4.jpg" alt="">
+                    <img src="e11.jpg" alt="">
                 </div>
   
                 <div class="navigation-auto">
@@ -172,7 +175,7 @@
                          <p class="marvel2"><span class="span1">Organizer:</span><br><%=rs.getString(5)%></p>
                      <p class="marvel3"><span class="span1">Contact No:</span><br><%=rs.getString(6)%></p>
                      <div class="booki">
-                         <a href="eventbook.jsp?id=<%=id%>">Book Now</a>
+                         <a href="eventbook.jsp?id=<%=id%>">Interested</a>
                      </div>
                      <div class="booki2">
                          <a href="<%=rs.getString(7)%>">Details >>></a>
@@ -202,15 +205,18 @@
                      <section id="services">
         <div class="services container">
             <div class="service-top">
-                <h1 class="section-title">Ser<span>Vi</span>ces</h1>
-                <p>Today we are going create a website which will be a nice one page website.
-                  This is for html & css practice and through this project we will see many things
-                   like how we can make our website fully responsive, so many thing about pseudo 
-                   elements, hamburger, Off-canvas menu and many more.Today we are going create a 
-                   website which will be a nice one page website.This is for html & css practice and 
-                   through this project we will see many things like how we can make our website 
-                   fully responsive, so many thing about pseudo elements, hamburger, Off-canvas 
-                   menu and many more. </p>
+                <h1 class="section-title"><span>Culture</span> In<span> Sri</span>Lanka</h1>
+                <p>Sri Lanka is one of the few countries with a very vast and rich cultural diversity. 
+                    The culture is itself very unique and thereby contributes to the Sri Lankan identity.
+                    Sri Lankan culture includes a lot of customs and rituals, whish date to more than 2000
+                    years which were handed down from generation to generation. The most prominent feature 
+                    of the Sri Lankan is its colourful festivals , which is one of the main tourist attractions. 
+                    Religion plays an important role in molding the Sri Lankan culture and traditions.One of the
+                    main features of the culture is its Indian and Europen influence. Since most of the time Sri
+                    Lankan kings married Indian princesses they incorporated Indian culture into ours but still
+                    preserving the unique Sri Lankan identity. The European influence was a result of invasion 
+                    from the Dutch and Portugese and finally the British. Hospitality is also one of the prominent 
+                    characteristics of the culture, making Sri Lankans one of the friendly nations in the world.</p>
             </div>
              </div>
         </div>

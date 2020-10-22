@@ -109,7 +109,7 @@
                             <td><%=rs.getString("inumber")%></td>
                             <td><%=rs.getString("ppnumber")%></td>
                             <td><%=rs.getString("message")%></td>
-                            <td><a href="update.jsp?id=<%=id%>">Edit</a></td>
+                            <td><a href="eventbookup.jsp?id=<%=id%>">Edit</a></td>
                             <td><a href="delete.jsp?id=<%=id%>">Delete</a></td>
                             
                         </tr>
