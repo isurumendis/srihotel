@@ -106,7 +106,7 @@ body3{
     position: absolute;
     color: transparent;
     top: 230px;
-    left: 475px;
+    left: 480px;
     margin: auto;
     
     font-weight: bold;
@@ -171,7 +171,7 @@ body3{
     height: 5px;
     width: 400px;
     position: absolute;
-    margin-left: 545px;
+    margin-left: 550px;
      z-index: 1;
      top: 300px;
    
@@ -210,10 +210,10 @@ body3{
 }
 @-webkit-keyframes text_reveal_name{
     100%{
-        color: #f3fab6;
+        color: #FE7;
         font-weight: bold;
         font-size: 4rem;
-       
+        
     }    
 }
 
