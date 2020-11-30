@@ -54,8 +54,6 @@
         <div class="collapse navbar-collapse" id="coll" >
          <ul class="nav navbar-nav">
           <li class="active"><a href="userhome.jsp">Home</a></li>
-          <li ><a href="Local.php">About Us</a></li>
-          <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           
@@ -63,7 +61,7 @@
           
          </ul>
          
-            <button type="submit" class="btn btn-warning btnfoc2"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning btnfoc11"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
          <form name="form1"    onclick="validate()" class="navbar-form navbar-right">
          
 </form>
@@ -214,7 +212,7 @@
                 <a href="#"><img src="whatsapp.png" alt="whatsapp"></a>
             </div>
             <div class="social-item">
-                <a href="#"><img src="instagram.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/sriparadise123/"><img src="instagram.png" alt="instagram"></a>
             </div>
           </div>
           <p>Copyright © 2020 Tour(Pvt)Ltd.&nbsp; All rights reserved</p>

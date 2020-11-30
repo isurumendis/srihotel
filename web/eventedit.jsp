@@ -29,7 +29,7 @@
     <body>
         
       <style>    
-            
+             <%@ include file="css/style.css"%>
        body{
        background-image: url("event.jpg");
        height:780px;
@@ -55,16 +55,15 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
+          <li ><a href="adminhome.jsp">Home</a></li>
+        
+          <li ><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>
-          <li class="active"><a href="eventC.jsp">Events Update</a></li>
+          <li class="active"><a href="#">Events Update</a></li>
          </ul>
-          <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
-            <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
+          <button type="submit" class="btn btn-warning btnfoc15"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>

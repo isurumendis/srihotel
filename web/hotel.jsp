@@ -30,7 +30,7 @@
              
              
           body{
-       background-image: url("12.jpg");
+       background-image: url("h56.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       
@@ -54,20 +54,20 @@
 	 padding-left: 350px;
  padding-top: 0px;
  font-weight: bold;
- color: White;
+ color: white;
  font-size: 14px;
 
  }
  h1{
      
-     color:purple; 
+     color:cornsilk; 
  }
    .btnfoc6{
     
     color: white;
 	margin-top: 7px;
        font-weight: bold ;
-       margin-left: 360px;
+       margin-left: 645px;
 }
 
 .btnfoc7{
@@ -95,11 +95,9 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="adminhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-        
-          <li ><a href="">Historical</a></li>
-          <li ><a href="eventR.jsp">Events</a></li>
+          <li ><a href="newuserhome.jsp">Home</a></li>
+          
+          <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           <li class="active"><a href="hotel.jsp">Reservation Request Form</a></li>
           
@@ -114,7 +112,7 @@
     <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...RESERVATION FORM...</b></h1></center><br>
         
         <div class="container" id="imag">
-        <form name="hform" action="data" method="get">
+        <form name="hform" action="data" method="get" autocomplete="off">
             
              <%
             

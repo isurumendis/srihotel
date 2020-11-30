@@ -30,7 +30,7 @@
              
              
           body{
-       background-image: url("12.jpg");
+       background-image: url("e15.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       
@@ -65,9 +65,9 @@
    .btnfoc6{
     
     color: white;
-	margin-top: 7px;
+	
        font-weight: bold ;
-       margin-left: 360px;
+       margin-left: 475px;
 }
 
 .btnfoc7{
@@ -95,24 +95,24 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-        
-          <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
+          <li ><a href="adminhome.jsp">Home</a></li>
+          
+          <li ><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
          
-          <li class="active"><a href="hotel.jsp">Reservation Request Form</a></li>
+          <li class="active"><a href="#">Event Interest Update</a></li>
           
          </ul>
-           <button type="submit" class="btn btn-warning btnfoc6 "><a href="index.jsp" class="btnfoc7">Log Out</a> </button>
+           <button type="submit" class="btn btn-warning btnfoc6 "><a href="admin.jsp" class="btnfoc7">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>
      <br>
         
         
-    <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...RESERVATION FORM...</b></h1></center><br>
+    <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...EVENTS FORM...</b></h1></center><br>
         
         <div class="container" id="imag">
         <form name="hform" action="evebookup" method="get">

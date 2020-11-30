@@ -19,7 +19,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/style1.css">
-     <link rel="stylesheet" type="text/css" href="css/hbook.css"/>
       <link rel="stylesheet" type="text/css" href="css/admincss.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" /><!--
 -->      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
@@ -58,12 +57,10 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
           <li class="active" ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
           </ul>
-         <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+         <button type="submit" class="btn btn-warning btnfoc11"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
          </div>
      </div>
      </div>
@@ -159,13 +156,13 @@
                 <li class="item-a">
                      <div class="box">
                 
-                <img src="hote.png" class="model">
+                <img src="even1.png" class="model">
                 
                 <p class="marvel1"><%=rs.getString(1)%></p>
                      <p class="marvel"><%=rs.getString(2)%></p>
                      <span class="v2"></span>
                      <div class="details">
-                         <p><%=rs.getString(3)%></p>
+                         <p><%=rs.getString(4)%></p>
                          
                      </div>
                     </div>
@@ -223,25 +220,25 @@
                          <div id="block">
                      <h1>Uber</h1>
                  <div class="imgZoom">
-                    <a href="link 1"><img src="uber.png"></a> 
+                    <a href="https://www.uber.com/jp/en/ride/ubertaxi/"><img src="uber.png"></a> 
                  </div> 
                  </div><br>
                   <div id="block">
                   <h1>Pickme</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="pickme.jfif"></a>   
+                     <a href="https://pickme.lk/"><img src="pickme.jfif"></a>   
                  </div>  
                  </div><br>
                   <div id="block">
                   <h1>Yogo</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="yogo.png"></a>   
+                     <a href="https://www.yogo.lk/"><img src="yogo.png"></a>   
                  </div>  
                  </div><br>
                   <div id="block">
                   <h1>Kangaroo</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="kangaroo.png"></a>   
+                     <a href="https://kangaroocabs.com/"><img src="kangaroo.png"></a>   
                  </div>  
                  </div><br>
                      </section>

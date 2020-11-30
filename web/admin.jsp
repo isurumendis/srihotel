@@ -64,7 +64,7 @@
     
         <div class="container" ><br><br>
             &nbsp; &nbsp; &nbsp; <center> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...PLEASE LOG IN...</b></h1></center><br><br>
-       <form name="form2" action="admin" method ="POST">
+       <form name="form2" action="admin" method ="POST" autocomplete="off">
   <div class="form-group  form-group1 " >
    <lable for="User Name">User Name:</lable>
    <input type="text" name="un" class="form-control title" placeholder="Enter User Name">

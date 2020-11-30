@@ -54,9 +54,7 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="adminhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
+             <li ><a href="adminhome.jsp">Home</a></li>
           <li ><a href="eventA.jsp">Events</a></li>
           <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>

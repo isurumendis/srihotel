@@ -54,8 +54,6 @@
         <div class="collapse navbar-collapse" id="coll" >
          <ul class="nav navbar-nav">
           <li class="active"><a href="adminhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
           <li ><a href="eventA.jsp">Events</a></li>
           <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>
@@ -65,7 +63,7 @@
          </ul>
          
            <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
-            <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
+            <button type="submit" class="btn btn-warning"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
          <form name="form1"    onclick="validate()" class="navbar-form navbar-right">
          
 </form>

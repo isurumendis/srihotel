@@ -25,7 +25,7 @@
     </head>
     <body>
         <style>
-            
+            <%@ include file="css/style.css"%>
             body{
        background-image: url("ss.jpg");
        height:754.5px;
@@ -76,15 +76,16 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-            <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
+            <li ><a href="adminhome.jsp">Home</a></li>
+         
+          <li ><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
           <li class="active"><a href="booking.jsp">Add Hotels</a></li>
           
          </ul>
-            <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning btnfoc14"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>
@@ -93,7 +94,7 @@
         
         <div class="container" id="imag">
             
-        <form name="bform" action="book" method="get">
+        <form name="bform" action="book" method="get" autocomplete="off">
             
             <div class="form-group  form-group10 " >
                 Hotel Name:<input type="text" name="b1" class="form-control title9" value="" placeholder="Hotel Name">

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : hotelbookup
-    Created on : Oct 21, 2020, 1:28:21 PM
+    Document   : eventbook1
+    Created on : Nov 28, 2020, 10:17:47 AM
     Author     : Isuru Mendis
 --%>
 
@@ -30,7 +30,7 @@
              
              
           body{
-       background-image: url("12.jpg");
+       background-image: url("e15.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       
@@ -60,14 +60,14 @@
  }
  h1{
      
-     color:purple; 
+     color:#204d74; 
  }
    .btnfoc6{
     
     color: white;
 	
        font-weight: bold ;
-       margin-left: 485px;
+       margin-left: 445px;
 }
 
 .btnfoc7{
@@ -99,11 +99,11 @@
           
           <li ><a href="eventA.jsp">Events</a></li>
           <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
-          <li ><a href="adminp.jsp">Add Post</a></li>
-          <li class="active"><a href="#">Reservation Update</a></li>
+         <li ><a href="adminp.jsp">Add Post</a></li>
+          <li class="active"><a href="#">Reservation Request Form</a></li>
           
          </ul>
-           <button type="submit" class="btn btn-warning btnfoc6 "><a href="admin.jsp" class="btnfoc7">Log Out</a> </button>
+           <button type="submit" class="btn btn-warning btnfoc6 "><a href="index.jsp" class="btnfoc7">Log Out</a> </button>
            <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
@@ -111,10 +111,10 @@
      <br>
         
         
-    <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...RESERVATION FORM...</b></h1></center><br>
+    <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...PARTICIPATION FORM...</b></h1></center><br>
         
         <div class="container" id="imag">
-        <form name="hform" action="hotelbooup" method="get">
+            <form name="hform" action="eventdata1" method="get" autocomplete="off">
             
              <%
             
@@ -126,7 +126,7 @@
                        con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
                        
                        String id = request.getParameter("id");
-                       pst = con.prepareStatement("select * from bookhotel where id = ? ");
+                       pst = con.prepareStatement("select * from uplod where id = ? ");
                        pst.setString(1, id);
                        rs = pst.executeQuery();
                        
@@ -136,38 +136,35 @@
             %>
             
             <div class="form-group  form-group1 " >
-                ID:<input type="text" name="t" class="form-control title8" value="<%= rs.getString("id")%>" placeholder="ID Number">
+                Post ID:<input type="text" name="n0" class="form-control title8" value="<%= rs.getString("id")%>" placeholder="ID Number">
             </div>
             <div class="form-group  form-group1 " >
-                Post ID:<input type="text" name="t0" class="form-control title8" value="<%= rs.getString("postid")%>" placeholder="Post ID">
+                Enter Name:<input type="text" name="n1" class="form-control title8" value="" placeholder="Full Name">
             </div>
             <div class="form-group  form-group1 " >
-                Enter Name:<input type="text" name="t1" class="form-control title8" value="<%= rs.getString("name")%>" placeholder="Full Name">
-            </div>
-            <div class="form-group  form-group1 " >
-                Enter Email:<input type="text" name="t2"  class="form-control title8" value="<%= rs.getString("email")%>" placeholder="Email">
+                Enter Email:<input type="text" name="n2"  class="form-control title8" value="" placeholder="Email">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Phone Number:<input type="text" name="t3"  class="form-control title8" value="<%= rs.getString("phonenumber")%>" placeholder="Phone Number">
+                Enter Phone Number:<input type="text" name="n3"  class="form-control title8" value="" placeholder="Phone Number">
               </div>
             <div class="form-group  form-group1 " >
-            Enter Check In:<input type="date" name="t4"  class="form-control title8" value="<%= rs.getString("checkin")%>">
+            Date Of Birth<input type="date" name="n4"  class="form-control title8" value="" placeholder="Date Of Birth">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Check Out:<input type="date" name="t5"  class="form-control title8" value="<%= rs.getString("checkout")%>">
+               Number Of Participants:<input type="text" name="n5"  class="form-control title8" value="" placeholder="Number Of Participants">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Number Of Rooms:<input type="text" name="t6"  class="form-control title8" value="<%= rs.getString("norooms")%>" placeholder="Number Of Rooms">
+              National ID Number:<input type="text" name="n6"  class="form-control title8" value="" placeholder="National ID Number">
               </div>
             <div class="form-group  form-group1 " >
-                Enter Passport Number:<input type="text" name="t7"  class="form-control title8" value="<%= rs.getString("ppnumber")%>" placeholder="Passport Number">
+                Enter Passport Number:<input type="text" name="n7"  class="form-control title8" value="" placeholder="Passport Number">
               </div>
             <div class="form-group  form-group1 " >
-            Enter Message:<input type="text" name="t8"  class="form-control title8" value="<%= rs.getString("message")%>" placeholder="More details about your inquary">
+            Add Message Any Other Request:<input type="text" name="n8"  class="form-control title8" value="" placeholder="More details about your inquary">
               </div>
              <% } %>
               <div class="form-group  form-group1 " >
-  <button type="submit" value="Submit" class="btn btn-success">Submit</button>
+ <button type="submit" value="Submit" class="btn btn-success">Submit</button>
   <button type="reset" value="Cancel" class="btn btn-warning">Cancel</button>
   </div>
            

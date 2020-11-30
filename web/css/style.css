@@ -84,7 +84,6 @@ color: #610B0B;
 .btnfoc3{
 
 	color: white;
-	padding-bottom: 70px;
        font-weight: bold ;
       
        
@@ -107,6 +106,26 @@ color: #610B0B;
        background-color: white;
        border-color: #ff9900;
        
+}
+
+.btnfoc10{
+    margin-left: 645px;
+}
+
+.btnfoc11{
+    margin-left: 845px;
+}
+.btnfoc12{
+    margin-left: 650px;
+}
+.btnfoc13{
+    margin-left: 560px;
+}
+.btnfoc14{
+    margin-left: 550px;
+}
+.btnfoc15{
+    margin-left: 525px;
 }
 #toprow h6{
 
