@@ -58,12 +58,10 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
           <li ><a href="eventRC.jsp">Events</a></li>
           <li class="active"><a href="Reservation.jsp">Hotels Booking</a></li>
           </ul>
-         <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+         <button type="submit" class="btn btn-warning btnfoc11"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
          </div>
      </div>
      </div>
@@ -228,25 +226,25 @@
                          <div id="block">
                      <h1>Uber</h1>
                  <div class="imgZoom">
-                    <a href="link 1"><img src="uber.png"></a> 
+                    <a href="https://www.uber.com/jp/en/ride/ubertaxi/"><img src="uber.png"></a> 
                  </div> 
                  </div><br>
                   <div id="block">
                   <h1>Pickme</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="pickme.jfif"></a>   
+                     <a href="https://pickme.lk/"><img src="pickme.jfif"></a>   
                  </div>  
                  </div><br>
                   <div id="block">
                   <h1>Yogo</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="yogo.png"></a>   
+                     <a href="https://www.yogo.lk/"><img src="yogo.png"></a>   
                  </div>  
                  </div><br>
                   <div id="block">
                   <h1>Kangaroo</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="kangaroo.png"></a>   
+                     <a href="https://kangaroocabs.com/"><img src="kangaroo.png"></a>   
                  </div>  
                  </div><br>
                      </section>

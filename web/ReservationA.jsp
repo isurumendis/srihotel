@@ -58,15 +58,13 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           <li ><a href="adminhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
           <li ><a href="eventA.jsp">Events</a></li>
           <li class="active" ><a href="ReservationA.jsp">Hotels Booking</a></li>
           <li ><a href="adminp.jsp">Add Post</a></li>
           
           </ul>
-         <button type="submit" class="btn btn-warning btnfoc10"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
-         <button type="submit" class="btn btn-warning btnfoc10"><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
+         <button type="submit" class="btn btn-warning btnfoc12"><a href="admin.jsp" class="btnfoc3">Log Out</a> </button>
+         <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
          </div>
      </div>
      </div>
@@ -181,7 +179,7 @@
                          <p class="marvel2"><span class="span1">Contact No:</span><br><%=rs.getString(4)%></p>
                      <p class="marvel3"><span class="span1">Email:</span><br><%=rs.getString(5)%></p>
                      <div class="booki">
-                         <a href="hotel.jsp?id=<%=id%>">Book Now</a>
+                         <a href="hotel1.jsp?id=<%=id%>">Book Now</a>
                      </div>
                      <div class="booki2">
                          <a href="<%=rs.getString(7)%>">Details >>></a>
@@ -231,25 +229,25 @@
                          <div id="block">
                      <h1>Uber</h1>
                  <div class="imgZoom">
-                    <a href="link 1"><img src="uber.png"></a> 
+                    <a href="https://www.uber.com/jp/en/ride/ubertaxi/"><img src="uber.png"></a> 
                  </div> 
                  </div><br>
                   <div id="block">
                   <h1>Pickme</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="pickme.jfif"></a>   
+                     <a href="https://pickme.lk/"><img src="pickme.jfif"></a>   
                  </div>  
                  </div><br>
                   <div id="block">
                   <h1>Yogo</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="yogo.png"></a>   
+                     <a href="https://www.yogo.lk/"><img src="yogo.png"></a>   
                  </div>  
                  </div><br>
                   <div id="block">
                   <h1>Kangaroo</h1>    
                  <div class="imgZoom">
-                     <a href="link 1"><img src="kangaroo.png"></a>   
+                     <a href="https://kangaroocabs.com/"><img src="kangaroo.png"></a>   
                  </div>  
                  </div><br>
                      </section>

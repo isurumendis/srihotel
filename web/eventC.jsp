@@ -28,7 +28,7 @@
     <body>
         
       <style>    
-            
+            <%@ include file="css/style.css"%>
        body{
        background-image: url("event.jpg");
        height:780px;
@@ -54,20 +54,22 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-          <li ><a href="">Historical</a></li>
-          <li ><a href="eventRC.jsp">Events</a></li>
-          <li ><a href="Reservation.jsp">Hotels Booking</a></li>
+          <li ><a href="adminhome.jsp">Home</a></li>
+       
+          <li ><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
           <li class="active"><a href="eventC.jsp">SL Events</a></li>
+          
          </ul>
-           <button type="submit" class="btn btn-warning btnfoc10"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+           <button type="submit" class="btn btn-warning btnfoc13"><a href="index.jsp" class="btnfoc3">Log Out</a> </button>
+           <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>
         
     <div class="container" id="imag">
-  <form name="form3" action="image " method ="POST">
+  <form name="form3" action="image " method ="POST" autocomplete="off">
       
       
   <div class="form-group  form-group1 " >
@@ -82,8 +84,8 @@
 
    <div class="form-group  form-group1 " >
    <lable for="discription">Discription:</lable>
-   <textarea type="text" name="e4"  class="form-control title2 checkLimit" value="" placeholder="Description"  maxlength="150"></textarea>
-   <span id="count">150</span> Remaining Character
+   <textarea type="text" name="e4"  class="form-control title2 checkLimit" value="" placeholder="Description"  maxlength="200"></textarea>
+   <span id="count">200</span> Remaining Character
    </div>
 
  
@@ -112,7 +114,7 @@
 </form>
 </div>
       <script language="javascript" type="text/javascript">
-    var maxLength = 150;
+    var maxLength = 200;
     $('.checkLimit').keyup(function() {
       var textlen = maxLength - $(this).val().length;
       $('#count').text(textlen);

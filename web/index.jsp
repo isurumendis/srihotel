@@ -54,7 +54,7 @@
           
          </ul>
          
-           <form name="form1"    onclick="validate()" class="navbar-form navbar-right" action="loginu" method="POST">
+            <form name="form1"    onclick="validate()" class="navbar-form navbar-right" action="loginu" method="POST" autocomplete="off">
            <div class="form-group">
             <input type="text" placeholder="Username" name= "fname" class="form-control">
           </div>
@@ -104,7 +104,7 @@
                       
                       <img src="close.png" alt="Close" class="close" >
                       <img src="icon.png" alt="user">
-                      <form name="pcform" action="pchange" method="get" >
+                      <form name="pcform" action="pchange" method="get" autocomplete="off">
            
                           <input class="hel" type="text" name="f1" placeholder="User Name">
                           <input class="hel" type="password" name="f2" placeholder="New Password">

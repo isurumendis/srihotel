@@ -1,6 +1,6 @@
 <%-- 
-    Document   : delete
-    Created on : Oct 12, 2020, 2:50:43 PM
+    Document   : deletehbook
+    Created on : Nov 24, 2020, 10:36:24 AM
     Author     : Isuru Mendis
 --%>
 
@@ -25,8 +25,8 @@
                        Class.forName("com.mysql.jdbc.Driver").newInstance();
                        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","");
                        Statement stat = conn.createStatement();
-                       stat.executeUpdate("delete from booking where id='"+no+"'");
-                       response.sendRedirect("hotelupdate.jsp");
+                       stat.executeUpdate("delete from bookhotel where id='"+no+"'");
+                       response.sendRedirect("bookdetail.jsp");
                         %>
                         
                         

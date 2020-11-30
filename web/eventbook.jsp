@@ -30,7 +30,7 @@
              
              
           body{
-       background-image: url("12.jpg");
+       background-image: url("e15.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       
@@ -60,14 +60,14 @@
  }
  h1{
      
-     color:purple; 
+     color:#204d74; 
  }
    .btnfoc6{
     
     color: white;
 	margin-top: 7px;
        font-weight: bold ;
-       margin-left: 360px;
+       margin-left: 645px;
 }
 
 .btnfoc7{
@@ -96,13 +96,11 @@
          <ul class="nav navbar-nav">
           
           <li ><a href="newuserhome.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
-        
-          <li ><a href="">Historical</a></li>
+          
           <li ><a href="eventRC.jsp">Events</a></li>
           <li ><a href="Reservation.jsp">Hotels Booking</a></li>
          
-          <li class="active"><a href="hotel.jsp">Reservation Request Form</a></li>
+          <li class="active"><a href="#">Reservation Request Form</a></li>
           
          </ul>
            <button type="submit" class="btn btn-warning btnfoc6 "><a href="index.jsp" class="btnfoc7">Log Out</a> </button>
@@ -112,10 +110,10 @@
      <br>
         
         
-    <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...RESERVATION FORM...</b></h1></center><br>
+    <center><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...PARTICIPATION FORM...</b></h1></center><br>
         
         <div class="container" id="imag">
-        <form name="hform" action="eventdata" method="get">
+        <form name="hform" action="eventdata" method="get" autocomplete="off">
             
              <%
             

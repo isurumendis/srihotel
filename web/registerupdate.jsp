@@ -60,6 +60,14 @@
      
      color:yellow; 
  }
+ 
+ .btnfoc6{
+    
+    color: white;
+	
+       font-weight: bold ;
+       margin-left: 540px;
+}
         </style>  
         
          
@@ -81,11 +89,15 @@
        <div class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
           
-          <li ><a href="index.jsp">Home</a></li>
-          <li ><a href="">About Us</a></li>
+          <li ><a href="adminhome.jsp">Home</a></li>
+          <li ><a href="eventA.jsp">Events</a></li>
+          <li ><a href="ReservationA.jsp">Hotels Booking</a></li>
+          <li ><a href="adminp.jsp">Add Post</a></li>
           <li class="active"><a href="booking.jsp">Registration</a></li>
           
          </ul>
+           <button type="submit" class="btn btn-warning btnfoc6 "><a href="admin.jsp" class="btnfoc7">Log Out</a> </button>
+            <button type="submit" class="btn btn-warning "><a href="poupselect.jsp" class="btnfoc3">Post Update</a> </button>
              </div>
      </div>
      </div>
@@ -97,7 +109,7 @@
         
         
         <div class="container" id="imag">
-        <form name="rform" action="registerupd" method="get">
+        <form name="rform" action="registerupd" method="get" autocomplete="off">
             
              <%
             

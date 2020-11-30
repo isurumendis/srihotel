@@ -91,7 +91,7 @@
         
         
         <div class="container" id="imag">
-        <form name="rform" action="register" method="get">
+        <form name="rform" action="register" method="get" autocomplete="off">
             
             <div class="form-group  form-group1 " >
                 First Name:<input type="text" name="f1" class="form-control title8" value="" placeholder="First Name">
